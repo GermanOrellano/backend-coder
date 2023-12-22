@@ -1,0 +1,30 @@
+[
+   {
+      "id": "a47a5abac57211edb2fa66c6",
+      "title": "Yerba Mate",
+      "photo": "foto de yerba",
+      "price": 2500,
+      "stock": 5
+   },
+   {
+      "id": "278471a417c3b8352b61736c",
+      "title": "Azúcar",
+      "photo": "foto de azúcar",
+      "price": 1200,
+      "stock": 7
+   },
+   {
+      "id": "23bb8cef323c745c80c2ece4",
+      "title": "Yerba Mate",
+      "photo": "foto de yerba",
+      "price": 2500,
+      "stock": 5
+   },
+   {
+      "id": "229e05a19ac6c153b3a720e0",
+      "title": "Azúcar",
+      "photo": "foto de azúcar",
+      "price": 1200,
+      "stock": 7
+   }
+]
