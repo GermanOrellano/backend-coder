@@ -1,0 +1,16 @@
+[
+   {
+      "id": "4c41f8393ed1e1b18efcb746",
+      "title": "Yerba Mate",
+      "photo": "foto de yerba",
+      "price": 2500,
+      "stock": 5
+   },
+   {
+      "id": "b3f3a8b8966192949efde24f",
+      "title": "Azúcar",
+      "photo": "foto de azúcar",
+      "price": 1200,
+      "stock": 7
+   }
+]
