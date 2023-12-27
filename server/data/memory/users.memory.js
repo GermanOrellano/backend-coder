@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
 class UserManager {
   static #users = [];
@@ -46,6 +46,20 @@ class UserManager {
       return console.log(error.message);
     }
   }
+
+  destroy(id) {
+    try {
+      const one = UserManager.#users.find((each) => each.id === id);
+      if (one) {
+        UserManager.#users = UserManager.#users.filter((each) => each.id != id);
+        console.log("Destroyed ID: " + id);
+      } else {
+        throw new Error("The id " + id + " wasn't found");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
 }
 
 const newUser = new UserManager();
@@ -70,3 +84,4 @@ newUser.create({
 
 newUser.read();
 newUser.readOne(5);
+newUser.destroy();

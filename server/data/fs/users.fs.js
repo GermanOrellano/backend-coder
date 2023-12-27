@@ -97,11 +97,11 @@ class UserManager {
   }
 }
 
-const user = new UserManager("./server/data/fs/files/users.json");
+const user = new UserManager("../server/data/fs/files/users.json");
 
 export default user;
 
-user.create({
+/* user.create({
   name: "Germán",
   photo: "foto de Germán",
   email: "german@mail.com",
@@ -111,8 +111,6 @@ user.create({
   name: "Federico",
   photo: "foto de Federico",
   email: "federico@mail.com",
-});
+}); */
 
-user.read();
-user.readOne("2c4c8380525d4425b83a0e83");
 user.read();

@@ -6,7 +6,7 @@ const server = express();
 
 const PORT = 8080;
 const ready = () => {
-  console.log("Server ready on PORT: " + PORT);
+  console.log(`Express server listening on port: ${PORT}`);
 };
 
 server.use(express.urlencoded({ extended: true }));
@@ -29,9 +29,19 @@ server.get("/api/products", (req, res) => {
 });
 
 server.get("/api/products/:pid", (req, res) => {
-  const { pid } = req.params;
-  const one = product.readOne(pid);
-  return res.status(200).json(one);
+  try {
+    const { pid } = req.params;
+    const one = product.readOne(pid);
+    return res.status(200).json({
+      success: true,
+      message: one,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 });
 
 server.get("/api/users", (req, res) => {
@@ -50,7 +60,17 @@ server.get("/api/users", (req, res) => {
 });
 
 server.get("/api/users/:uid", (req, res) => {
-  const { uid } = req.params;
-  const one = product.readOne(uid);
-  return res.status(200).json(one);
+  try {
+    const { uid } = req.params;
+    const one = user.readOne(uid);
+    return res.status(200).json({
+      success: true,
+      message: one,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 });

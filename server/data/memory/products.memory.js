@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
 class ProductManager {
   static #products = [];
@@ -52,6 +52,22 @@ class ProductManager {
       return console.log(error.message);
     }
   }
+
+  destroy(id) {
+    try {
+      const one = ProductManager.#products.find((each) => each.id === id);
+      if (one) {
+        ProductManager.#products = ProductManager.#products.filter(
+          (each) => each.id != id
+        );
+        console.log("Destroyed ID: " + id);
+      } else {
+        throw new Error("The id " + id + " wasn't found");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
 }
 
 const newProduct = new ProductManager();
@@ -72,3 +88,4 @@ newProduct.create({
 
 newProduct.read();
 newProduct.readOne(5);
+newProduct.destroy("57d904ef0e95fa157f397f596");

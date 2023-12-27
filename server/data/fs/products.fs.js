@@ -99,11 +99,11 @@ class ProductManager {
   }
 }
 
-const product = new ProductManager("./server/data/fs/files/products.json");
+const product = new ProductManager("../server/data/fs/files/products.json");
 
 export default product;
 
-product.create({
+/* product.create({
   title: "Yerba Mate",
   photo: "foto de yerba",
   price: 2500,
@@ -115,8 +115,6 @@ product.create({
   photo: "foto de azúcar",
   price: 1200,
   stock: 7,
-});
+}); */
 
 product.read();
-
-product.readOne("b7295a8dac02ac501e1b40c7");
