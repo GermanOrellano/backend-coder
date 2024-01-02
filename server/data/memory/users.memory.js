@@ -1,3 +1,5 @@
+import crypto from "crypto";
+
 class UserManager {
   static #users = [];
 
@@ -9,10 +11,7 @@ class UserManager {
         throw new Error("Name, photo and email are required");
       } else {
         const user = {
-          id:
-            UserManager.#users.length === 0
-              ? 1
-              : UserManager.#users[UserManager.#users.length - 1].id + 1,
+          id: crypto.randomBytes(12).toString("hex"),
           name: dataUser.name,
           photo: dataUser.photo,
           email: dataUser.email,
@@ -41,10 +40,24 @@ class UserManager {
       if (n > UserManager.#users.length) {
         throw new Error("The ID entered doesn't exist");
       } else {
-        console.log(UserManager.#users.find((each) => each.id === Number(n)));
+        console.log(UserManager.#users.find((each) => each.id === n));
       }
     } catch (error) {
       return console.log(error.message);
+    }
+  }
+
+  destroy(id) {
+    try {
+      const one = UserManager.#users.find((each) => each.id === id);
+      if (one) {
+        UserManager.#users = UserManager.#users.filter((each) => each.id != id);
+        console.log("Destroyed ID: " + id);
+      } else {
+        throw new Error("The id " + id + " wasn't found");
+      }
+    } catch (error) {
+      console.log(error.message);
     }
   }
 }
@@ -71,3 +84,4 @@ newUser.create({
 
 newUser.read();
 newUser.readOne(5);
+newUser.destroy();

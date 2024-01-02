@@ -1,3 +1,5 @@
+import crypto from "crypto";
+
 class ProductManager {
   static #products = [];
 
@@ -14,11 +16,7 @@ class ProductManager {
         throw new Error("Title, photo, price and stock are required");
       } else {
         const product = {
-          id:
-            ProductManager.#products.length === 0
-              ? 1
-              : ProductManager.#products[ProductManager.#products.length - 1]
-                  .id + 1,
+          id: crypto.randomBytes(12).toString("hex"),
           title: dataProduct.title,
           photo: dataProduct.photo,
           price: dataProduct.price,
@@ -48,12 +46,26 @@ class ProductManager {
       if (n > ProductManager.#products.length) {
         throw new Error("The ID entered doesn't exist");
       } else {
-        console.log(
-          ProductManager.#products.find((each) => each.id === Number(n))
-        );
+        console.log(ProductManager.#products.find((each) => each.id === n));
       }
     } catch (error) {
       return console.log(error.message);
+    }
+  }
+
+  destroy(id) {
+    try {
+      const one = ProductManager.#products.find((each) => each.id === id);
+      if (one) {
+        ProductManager.#products = ProductManager.#products.filter(
+          (each) => each.id != id
+        );
+        console.log("Destroyed ID: " + id);
+      } else {
+        throw new Error("The id " + id + " wasn't found");
+      }
+    } catch (error) {
+      console.log(error.message);
     }
   }
 }
@@ -76,3 +88,4 @@ newProduct.create({
 
 newProduct.read();
 newProduct.readOne(5);
+newProduct.destroy("57d904ef0e95fa157f397f596");

@@ -1,5 +1,5 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class ProductManager {
   static #products = [];
@@ -7,11 +7,16 @@ class ProductManager {
   init() {
     const exist = fs.existsSync(this.path);
 
-    !exist
-      ? fs.writeFileSync(this.path, JSON.stringify([], null, 3))
-      : (ProductManager.#products = JSON.parse(
-          fs.readFileSync(this.path, "utf-8")
-        ));
+    try {
+      !exist
+        ? fs.writeFileSync(this.path, JSON.stringify([], null, 3))
+        : (ProductManager.#products = JSON.parse(
+            fs.readFileSync(this.path, "utf-8")
+          ));
+    } catch (error) {
+      console.log(error.message);
+      return error.message;
+    }
   }
 
   constructor(path) {
@@ -73,11 +78,32 @@ class ProductManager {
       return error.message;
     }
   }
+
+  async destroy(id) {
+    try {
+      const one = ProductManager.#products.find((each) => each.id === id);
+      if (one) {
+        ProductManager.#products = ProductManager.#products.filter(
+          (each) => each.id != id
+        );
+        await fs.promises.writeFile(
+          this.path,
+          JSON.stringify(ProductManager.#products, null, 3)
+        );
+      } else {
+        throw new Error("The id " + id + " wasn't found");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
 }
 
-const product = new ProductManager("./fs/files/products.json");
+const product = new ProductManager("../server/data/fs/files/products.json");
 
-product.create({
+export default product;
+
+/* product.create({
   title: "Yerba Mate",
   photo: "foto de yerba",
   price: 2500,
@@ -89,8 +115,6 @@ product.create({
   photo: "foto de azúcar",
   price: 1200,
   stock: 7,
-});
+}); */
 
 product.read();
-
-product.readOne("b7295a8dac02ac501e1b40c7");
