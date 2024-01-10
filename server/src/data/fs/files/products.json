@@ -26,5 +26,12 @@
       "photo": "foto de yuyos",
       "price": 1500,
       "stock": 5
+   },
+   {
+      "id": "5ada2755e81af8aea2b9433a",
+      "title": "Bombillas",
+      "photo": "fotos de bombillas",
+      "price": 2300,
+      "stock": 10
    }
 ]

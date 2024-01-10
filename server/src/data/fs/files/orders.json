@@ -12,5 +12,12 @@
       "quantity": 3,
       "pid": "bfc026fc724c764e91f4072c",
       "state": "reserved"
+   },
+   {
+      "id": "89cedac160bd1771af983f18",
+      "uid": "6d23387cfb23909f9339db88",
+      "quantity": 3,
+      "pid": "bfc026fc724c764e91f4072c",
+      "state": "reserved"
    }
 ]
