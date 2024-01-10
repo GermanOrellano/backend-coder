@@ -14,7 +14,6 @@ class ProductManager {
             fs.readFileSync(this.path, "utf-8")
           ));
     } catch (error) {
-      console.log(error.message);
       return error.message;
     }
   }
@@ -45,7 +44,6 @@ class ProductManager {
         console.log("Created product, id: " + product.id);
       }
     } catch (error) {
-      console.log(error.message);
       throw error.message;
     }
   }
@@ -55,11 +53,9 @@ class ProductManager {
       if (ProductManager.#products.length === 0) {
         throw new Error("There aren't products");
       } else {
-        console.log(ProductManager.#products);
         return ProductManager.#products;
       }
     } catch (error) {
-      console.log(error.message);
       return error.message;
     }
   }
@@ -74,7 +70,6 @@ class ProductManager {
         throw new Error("The id " + id + " wasn't found");
       }
     } catch (error) {
-      console.log(error.message);
       return error.message;
     }
   }
@@ -94,27 +89,32 @@ class ProductManager {
         throw new Error("The id " + id + " wasn't found");
       }
     } catch (error) {
-      console.log(error.message);
+      return error.message;
+    }
+  }
+
+  async update(id, data) {
+    try {
+      const one = ProductManager.#products.readOne(id);
+      if (!one) {
+        throw new Error("Product not found");
+      } else {
+        one.title = data.title || one.title;
+        one.photo = data.photo || one.photo;
+        one.price = data.price || one.price;
+        one.stock = data.stock || one.stock;
+
+        await fs.promises.writeFile(
+          this.path,
+          JSON.stringify(ProductManager.#products, null, 3)
+        );
+      }
+    } catch (error) {
+      return error.message;
     }
   }
 }
 
-const product = new ProductManager("../server/data/fs/files/products.json");
+const product = new ProductManager("./src/data/fs/files/products.json");
 
 export default product;
-
-/* product.create({
-  title: "Yerba Mate",
-  photo: "foto de yerba",
-  price: 2500,
-  stock: 5,
-});
-
-product.create({
-  title: "Azúcar",
-  photo: "foto de azúcar",
-  price: 1200,
-  stock: 7,
-}); */
-
-product.read();

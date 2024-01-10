@@ -1,0 +1,30 @@
+[
+   {
+      "id": "d537b30b78295a41ac645709",
+      "title": "Yerba Mate",
+      "photo": "foto de yerba",
+      "price": 2500,
+      "stock": 5
+   },
+   {
+      "id": "09b3f4d3bc45a7e647a162f0",
+      "title": "Azúcar",
+      "photo": "foto de azúcar",
+      "price": 1200,
+      "stock": 7
+   },
+   {
+      "id": "e994b6c7a46cdada636c8c2c",
+      "title": "Azúcar",
+      "photo": "foto de azúcar",
+      "price": 1200,
+      "stock": 7
+   },
+   {
+      "id": "bfc026fc724c764e91f4072c",
+      "title": "Yuyos",
+      "photo": "foto de yuyos",
+      "price": 1500,
+      "stock": 5
+   }
+]

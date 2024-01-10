@@ -68,6 +68,22 @@ class ProductManager {
       console.log(error.message);
     }
   }
+
+  update(id, data) {
+    try {
+      const one = ProductManager.#products.readOne(id);
+      if (!one) {
+        throw new Error("Product not found");
+      } else {
+        one.title = data.title || one.title;
+        one.photo = data.photo || one.photo;
+        one.price = data.price || one.price;
+        one.stock = data.stock || one.stock;
+      }
+    } catch (error) {
+      return error.message;
+    }
+  }
 }
 
 const newProduct = new ProductManager();
