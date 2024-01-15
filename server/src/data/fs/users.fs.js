@@ -92,25 +92,31 @@ class UserManager {
         throw new Error("The id " + id + " wasn't found");
       }
     } catch (error) {
-      console.log(error.message);
+      return error.message;
+    }
+  }
+
+  async update(id, data) {
+    try {
+      const one = UserManager.#users.readOne(id);
+      if (!one) {
+        throw new Error("User not found");
+      } else {
+        one.name = data.name || one.name;
+        one.photo = data.photo || one.photo;
+        one.email = data.email || one.email;
+
+        await fs.promises.writeFile(
+          this.path,
+          JSON.stringify(UserManager.#users, null, 3)
+        );
+      }
+    } catch (error) {
+      return error.message;
     }
   }
 }
 
-const user = new UserManager("../server/data/fs/files/users.json");
+const user = new UserManager("./src/data/fs/files/users.json");
 
 export default user;
-
-/* user.create({
-  name: "Germán",
-  photo: "foto de Germán",
-  email: "german@mail.com",
-});
-
-user.create({
-  name: "Federico",
-  photo: "foto de Federico",
-  email: "federico@mail.com",
-}); */
-
-user.read();

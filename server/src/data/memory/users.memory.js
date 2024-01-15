@@ -60,6 +60,21 @@ class UserManager {
       console.log(error.message);
     }
   }
+
+  update(id, data) {
+    try {
+      const one = UserManager.#users.readOne(id);
+      if (!one) {
+        throw new Error("User not found");
+      } else {
+        one.name = data.name || one.name;
+        one.photo = data.photo || one.photo;
+        one.email = data.email || one.email;
+      }
+    } catch (error) {
+      return error.message;
+    }
+  }
 }
 
 const newUser = new UserManager();
