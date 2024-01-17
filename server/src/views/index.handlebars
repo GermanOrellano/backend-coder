@@ -1,0 +1,15 @@
+<main>
+    <h1>Bienvenido</h1>
+    <h3>Productos</h3>
+    <div class="d-flex flex-wrap justify-content-evenly">
+    {{#each products}}
+        <div class="card" style="width: 18rem;">
+            <img src={{this.photo}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>{{this.title}}</h4>
+                <p class="card-text">Price: {{this.price}}</p>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</main>
