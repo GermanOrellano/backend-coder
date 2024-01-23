@@ -5,8 +5,7 @@ const realRouter = Router();
 
 realRouter.get("/", async (req, res, next) => {
   try {
-    const all = await product.read();
-    return res.render("real", { products: all });
+    return res.render("real", {});
   } catch (error) {
     next(error);
   }

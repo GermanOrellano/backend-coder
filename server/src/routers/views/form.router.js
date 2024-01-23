@@ -1,5 +1,4 @@
 import { Router } from "express";
-import product from "../../data/fs/products.fs.js";
 
 const formRouter = Router();
 
