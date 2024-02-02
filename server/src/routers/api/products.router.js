@@ -1,12 +1,13 @@
 import { Router } from "express";
-import product from "../../data/fs/products.fs.js";
+//import product from "../../data/fs/products.fs.js";
+import { products } from "../../data/mongo/mongo.manager.js";
 
 const productsRouter = Router();
 
 productsRouter.post("/", async (req, res, next) => {
   try {
     const data = req.body;
-    const response = await product.create(data);
+    const response = await products.create(data);
     if (response === "Title, photo, price and stock are required") {
       return res.json({
         statusCode: 400,
@@ -25,7 +26,7 @@ productsRouter.post("/", async (req, res, next) => {
 
 productsRouter.get("/", async (req, res, next) => {
   try {
-    const all = await product.read();
+    const all = await products.read({});
     return res.json({
       statusCode: 200,
       message: all,
@@ -38,7 +39,7 @@ productsRouter.get("/", async (req, res, next) => {
 productsRouter.get("/:pid", async (req, res, next) => {
   try {
     const { pid } = req.params;
-    const pOne = await product.readOne(pid);
+    const pOne = await products.readOne(pid);
     return res.json({
       statusCode: 200,
       message: pOne,
@@ -52,7 +53,7 @@ productsRouter.put("/:pid", async (req, res, next) => {
   try {
     const { pid } = req.params;
     const data = req.body;
-    const uOne = await product.update(pid, data);
+    const uOne = await products.update(pid, data);
 
     return res.json({
       statusCode: 200,
@@ -66,7 +67,7 @@ productsRouter.put("/:pid", async (req, res, next) => {
 productsRouter.delete("/:pid", async (req, res, next) => {
   try {
     const { pid } = req.params;
-    const dOne = await product.destroy(pid);
+    const dOne = await products.destroy(pid);
     return res.json({
       statusCode: 200,
       message: dOne,
