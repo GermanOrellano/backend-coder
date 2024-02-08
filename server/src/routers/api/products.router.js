@@ -26,7 +26,18 @@ productsRouter.post("/", async (req, res, next) => {
 
 productsRouter.get("/", async (req, res, next) => {
   try {
-    const all = await products.read({});
+    const orderAndPaginate = {
+      limit: req.query.limit || 10,
+      page: req.query.page || 1,
+    };
+    let filter = {};
+    if (req.query.title) {
+      filter.title = new RegExp(req.query.title.trim(), "i");
+    }
+    if (req.query.price === "asc") {
+      orderAndPaginate.sort.price = 1;
+    }
+    const all = await products.read({ filter, orderAndPaginate });
     return res.json({
       statusCode: 200,
       message: all,

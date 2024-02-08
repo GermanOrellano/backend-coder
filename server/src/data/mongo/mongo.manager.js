@@ -1,6 +1,8 @@
 import User from "./models/user.model.js";
 import Product from "./models/product.model.js";
 import Order from "./models/order.model.js";
+import notFoundOne from "../../utils/notFoundOne.utils.js";
+import { Types } from "mongoose";
 
 class MongoManager {
   constructor(model) {
@@ -18,9 +20,9 @@ class MongoManager {
 
   async read(obj) {
     try {
-      const { filter, order } = obj;
-      const all = this.model.find(filter).sort(order);
-      if (all.length === 0) {
+      let { filter, orderAndPaginate } = obj;
+      const all = await this.model.paginate(filter, orderAndPaginate);
+      if (all.totalPages === 0) {
         const error = new Error("There is nothing to read");
         error.statusCode = 404;
         throw error;
@@ -34,11 +36,7 @@ class MongoManager {
   async readOne(id) {
     try {
       const one = await this.model.findById(id);
-      if (!one) {
-        const error = new Error("Id not found");
-        error.statusCode = 404;
-        throw error;
-      }
+      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -49,11 +47,7 @@ class MongoManager {
     try {
       const opt = { new: true };
       const one = await this.model.findByIdAndUpdate(id, data, opt);
-      if (!one) {
-        const error = new Error("Id not found");
-        error.statusCode = 404;
-        throw error;
-      }
+      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -63,12 +57,51 @@ class MongoManager {
   async destroy(id) {
     try {
       const one = await this.model.findByIdAndDelete(id);
-      if (!one) {
-        const error = new Error("Could not delete, id not found");
-        error.statusCode = 404;
-        throw error;
-      }
+      notFoundOne(one);
       return one;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async readByEmail(email) {
+    try {
+      const one = await this.model.findByEmail(email);
+      notFoundOne(one);
+      return one;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async reportBill(id) {
+    try {
+      const report = await this.model.aggregate([
+        { $match: { uid: new Types.ObjectId(id) } },
+        {
+          $lookup: {
+            from: "products",
+            foreignField: "_id",
+            localField: "pid",
+            as: "pid",
+          },
+        },
+        {
+          $replaceRoot: {
+            newRoot: {
+              $mergeObjects: [{ $arrayElemAt: ["$pid", 0] }, "$$ROOT"],
+            },
+          },
+        },
+        { $set: { subtotal: { $multiply: ["$price", "$quantity"] } } },
+        {
+          $group: { _id: "$uid", total: { $sum: "$subtotal" } },
+        },
+        {
+          $project: { _id: 0, uid: "$_id", total: "$total", date: new Date() },
+        },
+      ]);
+      return report;
     } catch (error) {
       throw error;
     }

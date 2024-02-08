@@ -26,9 +26,18 @@ usersRouter.post("/", async (req, res, next) => {
 
 usersRouter.get("/", async (req, res, next) => {
   try {
-    const filter = { age: req.query.age };
-    const order = { name: req.query.order };
-    const all = await users.read({ filter, order });
+    const orderAndPaginate = {
+      limit: req.query.limit || 10,
+      page: req.query.page || 1,
+    };
+    let filter = {};
+    if (req.query.name) {
+      filter.name = new RegExp(req.query.name.trim(), "i");
+    }
+    if (req.query.email === "asc") {
+      orderAndPaginate.sort.email = 1;
+    }
+    const all = await users.read({ filter, orderAndPaginate });
     return res.json({
       statusCode: 200,
       message: all,
@@ -42,6 +51,19 @@ usersRouter.get("/:uid", async (req, res, next) => {
   try {
     const { uid } = req.params;
     const one = await users.readOne(uid);
+    return res.json({
+      statusCode: 200,
+      message: one,
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
+
+usersRouter.get("/", async (req, res, next) => {
+  try {
+    const { email } = req.params;
+    const one = await users.readByEmail(email);
     return res.json({
       statusCode: 200,
       message: one,
