@@ -1,12 +1,13 @@
 import { Router } from "express";
-import user from "../../data/fs/users.fs.js";
+//import user from "../../data/fs/users.fs.js";
+import { users } from "../../data/mongo/mongo.manager.js";
 
 const usersRouter = Router();
 
 usersRouter.post("/", async (req, res, next) => {
   try {
     const data = req.body;
-    const response = await user.create(data);
+    const response = await users.create(data);
     if (response === "Name, photo and email are required") {
       return res.json({
         statusCode: 400,
@@ -25,7 +26,18 @@ usersRouter.post("/", async (req, res, next) => {
 
 usersRouter.get("/", async (req, res, next) => {
   try {
-    const all = await user.read();
+    const orderAndPaginate = {
+      limit: req.query.limit || 10,
+      page: req.query.page || 1,
+    };
+    let filter = {};
+    if (req.query.name) {
+      filter.name = new RegExp(req.query.name.trim(), "i");
+    }
+    if (req.query.email === "asc") {
+      orderAndPaginate.sort.email = 1;
+    }
+    const all = await users.read({ filter, orderAndPaginate });
     return res.json({
       statusCode: 200,
       message: all,
@@ -38,7 +50,20 @@ usersRouter.get("/", async (req, res, next) => {
 usersRouter.get("/:uid", async (req, res, next) => {
   try {
     const { uid } = req.params;
-    const one = await user.readOne(uid);
+    const one = await users.readOne(uid);
+    return res.json({
+      statusCode: 200,
+      message: one,
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
+
+usersRouter.get("/", async (req, res, next) => {
+  try {
+    const { email } = req.params;
+    const one = await users.readByEmail(email);
     return res.json({
       statusCode: 200,
       message: one,
@@ -52,7 +77,7 @@ usersRouter.put("/:uid", async (req, res, next) => {
   try {
     const { uid } = req.params;
     const data = req.body;
-    const uOne = await user.update(uid, data);
+    const uOne = await users.update(uid, data);
 
     return res.json({
       statusCode: 200,
@@ -66,7 +91,7 @@ usersRouter.put("/:uid", async (req, res, next) => {
 usersRouter.delete("/:uid", async (req, res, next) => {
   try {
     const { uid } = req.params;
-    const dOne = await user.destroy(uid);
+    const dOne = await users.destroy(uid);
     return res.json({
       statusCode: 200,
       message: dOne,

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 8px;
+}
+
+.card{
+    width: 300px !important;
+    height: 500px !important;
+    margin: 5px;
+}
+
+.card img {
+    width: 182px;
+    height: 200px;
+}
+
+.footer {
+    color: #ffff;
+    background-color: #7b7b7b;
+    border-radius: 10px;
+    margin-top: 20px;
+}

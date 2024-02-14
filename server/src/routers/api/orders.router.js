@@ -1,12 +1,13 @@
 import { Router } from "express";
-import order from "../../data/fs/orders.fs.js";
+//import order from "../../data/fs/orders.fs.js";
+import { orders } from "../../data/mongo/mongo.manager.js";
 
 const ordersRouter = Router();
 
 ordersRouter.post("/", async (req, res, next) => {
   try {
     const data = req.body;
-    const response = await order.create(data);
+    const response = await orders.create(data);
     if (response === "User ID, quantity and Product ID are required") {
       return res.json({
         statusCode: 400,
@@ -25,7 +26,18 @@ ordersRouter.post("/", async (req, res, next) => {
 
 ordersRouter.get("/", async (req, res, next) => {
   try {
-    const all = await order.read();
+    const orderAndPaginate = {
+      limit: req.query.limit || 10,
+      page: req.query.page || 1,
+    };
+    let filter = {};
+    if (req.query.uid) {
+      filter.uid = new RegExp(req.query.uid.trim(), "i");
+    }
+    if (req.query._id === "asc") {
+      orderAndPaginate.sort._id = 1;
+    }
+    const all = await orders.read({ filter, orderAndPaginate });
     return res.json({
       statusCode: 200,
       message: all,
@@ -35,10 +47,10 @@ ordersRouter.get("/", async (req, res, next) => {
   }
 });
 
-ordersRouter.get("/:uid", async (req, res, next) => {
+ordersRouter.get("/:oid", async (req, res, next) => {
   try {
-    const { uid } = req.params;
-    const oOne = await order.readOne(uid);
+    const { oid } = req.params;
+    const oOne = await orders.readOne(oid);
     return res.json({
       statusCode: 200,
       message: oOne,
@@ -48,10 +60,37 @@ ordersRouter.get("/:uid", async (req, res, next) => {
   }
 });
 
-ordersRouter.delete("/oid:", async (req, res, next) => {
+ordersRouter.get("/total/:uid", async (req, res, next) => {
+  try {
+    const { uid } = req.params;
+    const report = await orders.reportBill(uid);
+    return res.json({
+      statusCode: 200,
+      message: report,
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
+
+ordersRouter.put("/:oid", async (req, res, next) => {
   try {
     const { oid } = req.params;
-    const dOne = await order.destroy(oid);
+    const data = req.body;
+    const oOne = await orders.update(oid, data);
+    return res.json({
+      statusCode: 200,
+      message: oOne,
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
+
+ordersRouter.delete("/:oid", async (req, res, next) => {
+  try {
+    const { oid } = req.params;
+    const dOne = await orders.destroy(oid);
     return res.json({
       statusCode: 200,
       message: dOne,
