@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const formRouter = Router();
 
-formRouter.get("/", async (req, res, next) => {
+formRouter.get("/form", async (req, res, next) => {
   try {
     return res.render("form");
   } catch (error) {

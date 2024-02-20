@@ -66,7 +66,7 @@ class MongoManager {
 
   async readByEmail(email) {
     try {
-      const one = await this.model.findByEmail(email);
+      const one = await this.model.findOne({ email });
       notFoundOne(one);
       return one;
     } catch (error) {
