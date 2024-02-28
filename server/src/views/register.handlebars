@@ -1,21 +1,29 @@
-<form class="w-50 m-auto">
-    <h1>New User</h1>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Name</label>
-        <input type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Last Name</label>
-        <input type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Photo link</label>
-        <input type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
+<main class="flex-grow-1 d-flex w-100 flex-wrap justify-content-evenly">
+    <section class="w-50 mb-4 d-flex flex-column justify-content-start align-items-center" style="min-width: 380px;">
+        <form class="w-50 m-auto">
+            <h2>New User</h2>
+            <fieldset class="mb-3 text-center">
+                <label for="name" class="form-label mb-0">Name</label>
+                <input type="text" class="form-control" id="register-name" />
+            </fieldset>
+            <fieldset class="mb-3 text-center">
+                <label for="lastname" class="form-label mb-0">Last Name</label>
+                <input type="text" class="form-control" id="register-lastname" />
+            </fieldset>
+            <fieldset class="mb-3 text-center">
+                <label for="photo" class="form-label mb-0">URL Photo</label>
+                <input type="text" class="form-control" id="register-photo" />
+            </fieldset>
+            <fieldset class="mb-3 text-center">
+                <label for="email" class="form-label mb-0">Email</label>
+                <input type="email" class="form-control" id="register-email" />
+            </fieldset>
+            <fieldset class="mb-3 text-center">
+                <label for="password" class="form-label mb-0">Password</label>
+                <input type="password" class="form-control" id="register-password" />
+            </fieldset>
+            <button id="register" type="button" class="w-100 btn btn-primary mt-3">Register</button>
+        </form>
+    </section>
+</main>
+<script src="/scripts/register.js"></script>

@@ -1,10 +1,11 @@
 import { Router } from "express";
 //import product from "../../data/fs/products.fs.js";
 import { products } from "../../data/mongo/mongo.manager.js";
+import isAdmin from "../../middlewares/isAdmin.mid.js";
 
 const productsRouter = Router();
 
-productsRouter.post("/", async (req, res, next) => {
+productsRouter.post("/", isAdmin, async (req, res, next) => {
   try {
     const data = req.body;
     const response = await products.create(data);
@@ -16,7 +17,7 @@ productsRouter.post("/", async (req, res, next) => {
     } else {
       return res.json({
         statusCode: 201,
-        response,
+        message: "Product Created",
       });
     }
   } catch (error) {
