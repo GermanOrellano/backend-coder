@@ -1,4 +1,4 @@
-const socket = io();
+/* const socket = io();
 
 socket.on("products", (data) => {
   const template = data
@@ -39,3 +39,4 @@ document.querySelector("#new-product").addEventListener("click", (event) => {
   console.log(data);
   socket.emit("newProduct", data);
 });
+ */

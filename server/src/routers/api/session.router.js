@@ -1,40 +1,67 @@
 import { Router } from "express";
-import { users } from "../../data/mongo/mongo.manager.js";
 import has8char from "../../middlewares/has8char.mid.js";
-import isValidPass from "../../middlewares/isValidPass.mid.js";
+import passport from "../../middlewares/passport.mid.js";
 
 const sessionRouter = Router();
 
-sessionRouter.post("/register", has8char, async (req, res, next) => {
-  try {
-    const data = req.body;
-    await users.create(data);
-    return res.json({
-      statusCode: 200,
-      message: "Registered",
-    });
-  } catch (error) {
-    return next(error);
+sessionRouter.post(
+  "/register",
+  has8char,
+  passport.authenticate("register", {
+    session: false,
+    failureRedirect: "/api/auth/badauth",
+  }),
+  async (req, res, next) => {
+    try {
+      return res.json({
+        statusCode: 200,
+        message: "Registered",
+      });
+    } catch (error) {
+      return next(error);
+    }
   }
-});
+);
 
 sessionRouter.post(
   "/login",
-  /* isValidPass ,*/ async (req, res, next) => {
+  passport.authenticate("login", {
+    session: false,
+    failureRedirect: "/api/auth/badauth",
+  }),
+  async (req, res, next) => {
     try {
-      const { email, password } = req.body;
-      if (email && password === "hola1234") {
-        req.session.email = email;
-        req.session.role = "admin";
-        return res.json({
-          statusCode: 200,
-          message: "Login",
-        });
-      } else {
-        const error = new Error("Invalid credentials");
-        error.statusCode = 401;
-        throw error;
-      }
+      return res.json({
+        statusCode: 200,
+        message: "Logged in",
+        token: req.token,
+      });
+    } catch (error) {
+      return next(error);
+    }
+  }
+);
+
+//google
+sessionRouter.get(
+  "/google",
+  passport.authenticate("google", { scope: ["email", "profile"] })
+);
+
+//google-cb
+sessionRouter.get(
+  "/google/cb",
+  passport.authenticate("google", {
+    session: false,
+    failureRedirect: "/api/auth/badauth",
+  }),
+  async (req, res, next) => {
+    try {
+      return res.json({
+        statusCode: 200,
+        message: "Logged in with Google",
+        session: req.session,
+      });
     } catch (error) {
       return next(error);
     }
@@ -56,6 +83,17 @@ sessionRouter.post("/signout", async (req, res, next) => {
     }
   } catch (error) {
     return next(error);
+  }
+});
+
+sessionRouter.get("/badauth", (req, res, next) => {
+  try {
+    return res.json({
+      statusCode: 401,
+      message: "Bad Auth",
+    });
+  } catch (error) {
+    next(error);
   }
 });
 
