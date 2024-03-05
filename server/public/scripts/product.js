@@ -15,21 +15,25 @@ selector.addEventListener("click", async () => {
       body: JSON.stringify(data),
     };
 
-    let response = await fetch("/product/form", opts);
+    let response = await fetch("/api/products", opts);
     response = await response.json();
-
-    Swal.fire({
-      title: "New Product!",
-      text: response.message,
-      icon: "success",
-    });
-
-    response.message === "Product Created" && location.replace("/");
+    console.log(response);
+    if (response.statusCode === 201) {
+      Swal.fire({
+        title: "New Product!",
+        text: response.message,
+        icon: "success",
+      });
+    } else {
+      const error = new Error("It was not possible to create the product");
+      error.statusCode = 401;
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.message,
+      });
+    }
   } catch (error) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: error.message,
-    });
+    alert(error.message);
   }
 });

@@ -1,0 +1,9 @@
+<main class="flex-grow-1 w-100 d-flex flex-column">
+    <h2 class="subtitle mt-4 mb-2 text-center">My Cart</h2>
+    <section id="products-cart" class="d-flex flex-column justify-content-center align-items-center m-auto mt-2 mb-4 bg-light" style="width: 360px">
+       {{#each orders}}
+            <p src="{{this.pid.title}}" alt="">
+       {{/each}} 
+    </section>
+</main>
+<script src="/scripts/order.js"></script>
