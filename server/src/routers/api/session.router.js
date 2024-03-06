@@ -70,6 +70,7 @@ sessionRouter.get(
 
 sessionRouter.post("/signout", async (req, res, next) => {
   try {
+    console.log(req.session.email);
     if (req.session.email) {
       req.session.destroy();
       return res.json({

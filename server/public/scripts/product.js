@@ -15,6 +15,28 @@ selector.addEventListener("click", async () => {
       body: JSON.stringify(data),
     };
 
+<<<<<<< HEAD
+    let response = await fetch("/api/products", opts);
+    response = await response.json();
+    console.log(response);
+    if (response.statusCode === 201) {
+      Swal.fire({
+        title: "New Product!",
+        text: response.message,
+        icon: "success",
+      });
+    } else {
+      const error = new Error("It was not possible to create the product");
+      error.statusCode = 401;
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.message,
+      });
+    }
+  } catch (error) {
+    alert(error.message);
+=======
     let response = await fetch("/product/form", opts);
     response = await response.json();
 
@@ -31,5 +53,6 @@ selector.addEventListener("click", async () => {
       title: "Oops...",
       text: error.message,
     });
+>>>>>>> 2dcb6f6ca03e0d8cc24b30e134b29606aad30a1f
   }
 });
