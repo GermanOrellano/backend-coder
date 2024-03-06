@@ -16,8 +16,11 @@ selector.addEventListener("click", async () => {
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> sprint7.2
     let response = await fetch("/api/products", opts);
     response = await response.json();
     console.log(response);
@@ -38,6 +41,7 @@ selector.addEventListener("click", async () => {
     }
   } catch (error) {
     alert(error.message);
+<<<<<<< HEAD
 =======
 >>>>>>> e6e6f5c2cb19d37c0c0bba8bec028e86cf3b8db3
     let response = await fetch("/product/form", opts);
@@ -60,5 +64,7 @@ selector.addEventListener("click", async () => {
 =======
 >>>>>>> 2dcb6f6ca03e0d8cc24b30e134b29606aad30a1f
 >>>>>>> e6e6f5c2cb19d37c0c0bba8bec028e86cf3b8db3
+=======
+>>>>>>> sprint7.2
   }
 });
