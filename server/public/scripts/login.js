@@ -15,7 +15,10 @@ selector.addEventListener("click", async () => {
 
     let response = await fetch("/api/auth/login", opts);
     response = await response.json();
+<<<<<<< HEAD
     console.log(response.message);
+=======
+>>>>>>> 2dcb6f6ca03e0d8cc24b30e134b29606aad30a1f
 
     Swal.fire({
       title: "Login!",
@@ -23,7 +26,11 @@ selector.addEventListener("click", async () => {
       icon: "success",
     });
 
+<<<<<<< HEAD
     response.token && location.replace("/");
+=======
+    response.session && location.replace("/");
+>>>>>>> 2dcb6f6ca03e0d8cc24b30e134b29606aad30a1f
     //revisar catch
   } catch (error) {
     Swal.fire({
