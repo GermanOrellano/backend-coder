@@ -15,21 +15,24 @@ selector.addEventListener("click", async () => {
 
     let response = await fetch("/api/auth/login", opts);
     response = await response.json();
-    console.log(response.message);
+    console.log(response);
 
-    Swal.fire({
-      title: "Login!",
-      text: response.message,
-      icon: "success",
-    });
-
-    response.token && location.replace("/");
-    //revisar catch
+    if (response.statusCode === 200) {
+      localStorage.setItem("token", response.token);
+      Swal.fire({
+        title: "Login!",
+        text: response.message,
+        icon: "success",
+      });
+      location.replace("/");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: response.message,
+      });
+    }
   } catch (error) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: error.message,
-    });
+    console.log(error);
   }
 });

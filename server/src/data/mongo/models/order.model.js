@@ -16,21 +16,20 @@ const schema = new Schema(
   { timestamps: true }
 );
 
-schema.pre("find", function () {
-  this.populate("uid", "name lastname");
-});
-schema.pre("find", function () {
-  this.populate("pid", "title price");
-});
-
-schema.pre("findOne", function () {
-  this.populate("uid", "name lastname");
-});
-schema.pre("findOne", function () {
-  this.populate("pid", "title price");
-});
-
 schema.plugin(mongoosePaginate);
-const Order = model(collection, schema);
 
+schema.pre("find", function () {
+  this.populate("uid", "name lastname");
+});
+schema.pre("find", function () {
+  this.populate("pid", "title price");
+});
+schema.pre("findOne", function () {
+  this.populate("uid", "name lastname");
+});
+schema.pre("findOne", function () {
+  this.populate("pid", "title price");
+});
+
+const Order = model(collection, schema);
 export default Order;

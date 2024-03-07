@@ -5,7 +5,8 @@ import isAdmin from "../../middlewares/isAdmin.mid.js";
 
 const productsRouter = Router();
 
-productsRouter.post("/", isAdmin, async (req, res, next) => {
+//solucionar problema isAdmin
+productsRouter.post("/" /* , isAdmin */, async (req, res, next) => {
   try {
     const data = req.body;
     const response = await products.create(data);

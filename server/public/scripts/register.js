@@ -19,18 +19,21 @@ selector.addEventListener("click", async () => {
     let response = await fetch("/api/auth/register", opts);
     response = await response.json();
 
-    Swal.fire({
-      title: "Register!",
-      text: response.message,
-      icon: "success",
-    });
-
-    response.message === "Registered" && location.replace("/auth/login");
+    if (response.message === "Registered") {
+      Swal.fire({
+        title: "Register!",
+        text: response.message,
+        icon: "success",
+      });
+      location.replace("/auth/login");
+    } else {
+      Swal.fire({
+        title: "Oops...",
+        text: response.message,
+        icon: "error",
+      });
+    }
   } catch (error) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: error.message,
-    });
+    console.log(error);
   }
 });

@@ -29,12 +29,13 @@ usersRouter.get("/", async (req, res, next) => {
     const orderAndPaginate = {
       limit: req.query.limit || 10,
       page: req.query.page || 1,
+      sort: { email: 1 },
     };
     let filter = {};
-    if (req.query.name) {
-      filter.name = new RegExp(req.query.name.trim(), "i");
+    if (req.query.email) {
+      filter.email = new RegExp(req.query.email.trim(), "i");
     }
-    if (req.query.email === "asc") {
+    if (req.query.sort === "asc") {
       orderAndPaginate.sort.email = 1;
     }
     const all = await users.read({ filter, orderAndPaginate });
