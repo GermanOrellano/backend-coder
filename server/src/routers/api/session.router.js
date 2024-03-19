@@ -68,20 +68,18 @@ sessionRouter.get(
   }
 );
 
+//github
+sessionRouter.get(
+  "/github",
+  passport.authenticate("github", { scope: ["user:email"] })
+);
+
 sessionRouter.post("/signout", async (req, res, next) => {
   try {
-    console.log(req.session.email);
-    if (req.session.email) {
-      req.session.destroy();
-      return res.json({
-        statusCode: 200,
-        message: "Signed out",
-      });
-    } else {
-      const error = new Error("No auth");
-      error.statusCode = 401;
-      throw error;
-    }
+    return res.json({
+      statusCode: 200,
+      message: "Signed out",
+    });
   } catch (error) {
     return next(error);
   }

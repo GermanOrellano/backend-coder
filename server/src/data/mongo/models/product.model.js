@@ -13,6 +13,6 @@ const schema = new Schema(
 );
 
 schema.plugin(mongoosePaginate);
-const Product = model(collection, schema);
 
+const Product = model(collection, schema);
 export default Product;

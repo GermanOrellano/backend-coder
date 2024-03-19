@@ -1,11 +1,12 @@
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
+import { Strategy as GithubStrategy } from "passport-github2";
 import { createHash, verifyaHash } from "../utils/hash.util.js";
-import { createToken, verifyToken } from "../utils/token.util.js";
+import { createToken } from "../utils/token.util.js";
 import { users } from "../data/mongo/mongo.manager.js";
 
-const { GOOGLE_ID, GOOGLE_CLIENT } = process.env;
+const { GOOGLE_ID, GOOGLE_CLIENT, GITHUB_ID, GITHUB_CLIENT } = process.env;
 
 passport.use(
   "register",
@@ -36,17 +37,10 @@ passport.use(
     async (req, email, password, done) => {
       try {
         const user = await users.readByEmail(email);
-        if (user) {
-          const verify = verifyaHash(password, user.password);
-          if (verify) {
-            /*  req.session.email = email;
-            req.session.role = user.role; */
-            const token = createToken({ email, role: user.role });
-            req.token = token;
-            return done(null, user);
-          } else {
-            return done(null, false);
-          }
+        if (user && verifyaHash(password, user.password)) {
+          const token = createToken({ email, role: user.role });
+          req.token = token;
+          return done(null, user);
         } else {
           return done(null, false);
         }
@@ -85,6 +79,39 @@ passport.use(
         }
       } catch (error) {
         done(error);
+      }
+    }
+  )
+);
+
+passport.use(
+  "github",
+  new GithubStrategy(
+    {
+      passReqToCallback: true,
+      clientID: GITHUB_ID,
+      clientSecret: GITHUB_CLIENT,
+      callbackURL: "http://localhost:8080/api/auth/github/cb",
+    },
+
+    async (req, accessToken, refreshToken, profile, done) => {
+      try {
+        let user = await users.readByEmail(profile.id + "github.com");
+        if (!user) {
+          user = {
+            email: profile.id + "github.com",
+            name: profile.username,
+            //agregar lastname
+            photo: profile._json.avatar_url,
+            password: createHash(profile.id),
+          };
+          user = await users.create(user);
+        }
+        req.session.email = user.email;
+        req.session.role = user.role;
+        return done(null, user);
+      } catch (error) {
+        return done(error);
       }
     }
   )

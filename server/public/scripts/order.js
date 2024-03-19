@@ -3,7 +3,7 @@ const selector = document.querySelector(".deleteButton");
 selector.forEach((each) =>
   each.addEventListener("click", async (e) => {
     try {
-      const url = "/api/orders/" + e.target.id;
+      const url = "/api/orders" + e.target.id;
       const opts = {
         method: "DELETE",
         headers: { "Content-type": "application/json" },
