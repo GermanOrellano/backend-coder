@@ -13,9 +13,9 @@ fetch("/api/auth/", { method: "POST" })
         .addEventListener("click", async () => {
           try {
             const token = localStorage.getItem("token");
-            const options = {
+            let options = {
               method: "POST",
-              headers: { "Content-Type": "application/json", token },
+              headers: { "Content-Type": "application/json" },
             };
             let response = await fetch("/api/auth/signout", options);
             response = await response.json();

@@ -18,7 +18,7 @@ selector.addEventListener("click", async () => {
     console.log(response);
 
     if (response.statusCode === 200) {
-      localStorage.setItem("token", response.token);
+      //localStorage.setItem("token", response.token);
       Swal.fire({
         title: "Login!",
         text: response.message,

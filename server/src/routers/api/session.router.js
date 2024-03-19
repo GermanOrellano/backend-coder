@@ -1,6 +1,7 @@
 import { Router } from "express";
 import has8char from "../../middlewares/has8char.mid.js";
 import passport from "../../middlewares/passport.mid.js";
+import isAuth from "../../middlewares/isAuth.mid.js";
 
 const sessionRouter = Router();
 
@@ -31,11 +32,15 @@ sessionRouter.post(
   }),
   async (req, res, next) => {
     try {
-      return res.json({
-        statusCode: 200,
-        message: "Logged in",
-        token: req.token,
-      });
+      return res
+        .cookie("token", req.token, {
+          maxAge: 7 * 24 * 60 * 60 * 1000,
+          httpOnly: true,
+        })
+        .json({
+          statusCode: 200,
+          message: "Logged in",
+        });
     } catch (error) {
       return next(error);
     }
@@ -74,11 +79,30 @@ sessionRouter.get(
   passport.authenticate("github", { scope: ["user:email"] })
 );
 
-sessionRouter.post("/signout", async (req, res, next) => {
+sessionRouter.post(
+  "/signout",
+  passport.authenticate("jwt", {
+    session: false,
+    failureRedirect: "/api/auth/signout/cb",
+  }),
+  async (req, res, next) => {
+    try {
+      return res.clearCookie("token").json({
+        statusCode: 200,
+        message: "Signed out",
+      });
+    } catch (error) {
+      return next(error);
+    }
+  }
+);
+
+//signout cb
+sessionRouter.get("/signout/cb", (req, res, next) => {
   try {
     return res.json({
-      statusCode: 200,
-      message: "Signed out",
+      statusCode: 400,
+      message: "Already done",
     });
   } catch (error) {
     return next(error);
