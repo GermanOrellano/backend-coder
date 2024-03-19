@@ -2,29 +2,35 @@ import { Router } from "express";
 //import product from "../../data/fs/products.fs.js";
 import { products } from "../../data/mongo/mongo.manager.js";
 import isAdmin from "../../middlewares/isAdmin.mid.js";
+import passport from "../../middlewares/passport.mid.js";
 
 const productsRouter = Router();
 
 //solucionar problema isAdmin
-productsRouter.post("/" /* , isAdmin */, async (req, res, next) => {
-  try {
-    const data = req.body;
-    const response = await products.create(data);
-    if (response === "Title, photo, price and stock are required") {
-      return res.json({
-        statusCode: 400,
-        message: response,
-      });
-    } else {
-      return res.json({
-        statusCode: 201,
-        message: "Product Created",
-      });
+productsRouter.post(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  isAdmin,
+  async (req, res, next) => {
+    try {
+      const data = req.body;
+      const response = await products.create(data);
+      if (response === "Title, photo, price and stock are required") {
+        return res.json({
+          statusCode: 400,
+          message: response,
+        });
+      } else {
+        return res.json({
+          statusCode: 201,
+          message: "Product Created",
+        });
+      }
+    } catch (error) {
+      return next(error);
     }
-  } catch (error) {
-    return next(error);
   }
-});
+);
 
 productsRouter.get("/", async (req, res, next) => {
   try {
