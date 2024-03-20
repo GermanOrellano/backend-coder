@@ -18,7 +18,10 @@ passport.use(
       try {
         let one = await users.readByEmail(email);
         if (one) {
-          return done(null, false);
+          return done(null, false, {
+            message: "Already exist",
+            statusCode: 400,
+          });
         } else {
           let data = req.body;
           data.password = createHash(password);
@@ -44,7 +47,7 @@ passport.use(
           req.token = token;
           return done(null, user);
         } else {
-          return done(null, false, { message: "Bad auth" });
+          return done(null, false, { message: "Bad auth from passport" });
         }
       } catch (error) {
         return done(error);
