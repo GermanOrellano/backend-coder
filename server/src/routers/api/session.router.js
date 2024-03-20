@@ -2,16 +2,18 @@ import { Router } from "express";
 import has8char from "../../middlewares/has8char.mid.js";
 import passport from "../../middlewares/passport.mid.js";
 import isAuth from "../../middlewares/isAuth.mid.js";
+import passCallback from "../../middlewares/passCallback.mid.js";
 
 const sessionRouter = Router();
 
 sessionRouter.post(
   "/register",
   has8char,
-  passport.authenticate("register", {
+  /* passport.authenticate("register", {
     session: false,
     failureRedirect: "/api/auth/badauth",
-  }),
+  }), */
+  passCallback("register"),
   async (req, res, next) => {
     try {
       return res.json({
@@ -26,10 +28,11 @@ sessionRouter.post(
 
 sessionRouter.post(
   "/login",
-  passport.authenticate("login", {
+  /*  passport.authenticate("login", {
     session: false,
     failureRedirect: "/api/auth/badauth",
-  }),
+  }), */
+  passCallback("login"),
   async (req, res, next) => {
     try {
       return res
@@ -81,10 +84,11 @@ sessionRouter.get(
 
 sessionRouter.post(
   "/signout",
-  passport.authenticate("jwt", {
+  /* passport.authenticate("jwt", {
     session: false,
     failureRedirect: "/api/auth/signout/cb",
-  }),
+  }), */
+  passCallback("jwt"),
   async (req, res, next) => {
     try {
       return res.clearCookie("token").json({
