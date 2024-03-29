@@ -11,7 +11,7 @@ export default class ViewsRouter extends CustomRouter {
     this.router.use("/product", formRouter);
     this.router.use("/orders", orderRouter);
     this.router.use("/auth", registerRouter, loginRouter);
-    this.read("/", async (req, res, next) => {
+    this.read("/", ["PUBLIC"], async (req, res, next) => {
       try {
         const options = {
           limit: req.query.limit || 4,
@@ -20,7 +20,7 @@ export default class ViewsRouter extends CustomRouter {
           lean: true,
         };
 
-        let filter = {};
+        const filter = {};
         if (req.query.title) {
           filter.title = new RegExp(req.query.title.trim(), "i");
         }

@@ -1,7 +1,6 @@
 import { Router } from "express";
 import has8char from "../../middlewares/has8char.mid.js";
 import passport from "../../middlewares/passport.mid.js";
-import isAuth from "../../middlewares/isAuth.mid.js";
 import passCallback from "../../middlewares/passCallback.mid.js";
 
 const sessionRouter = Router();

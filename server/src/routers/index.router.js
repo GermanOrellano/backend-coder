@@ -7,7 +7,7 @@ const views = new ViewsRouter();
 
 export default class IndexRouter extends CustomRouter {
   init() {
-    this.router.use("api", api.getRouter());
-    this.router.use("/", views.getRouter());
+    this.use("api", api.getRouter());
+    this.use("/", views.getRouter());
   }
 }
