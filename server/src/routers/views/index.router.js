@@ -6,7 +6,7 @@ import { loginRouter } from "./session.router.js";
 import formRouter from "./form.router.js";
 import orderRouter from "./order.router.js";
 
-export default class ViewsRouter extends CustomRouter {
+class ViewsRouter extends CustomRouter {
   init() {
     this.router.use("/product", formRouter);
     this.router.use("/orders", orderRouter);
@@ -44,3 +44,6 @@ export default class ViewsRouter extends CustomRouter {
     });
   }
 }
+
+const viewsRouter = new ViewsRouter();
+export default viewsRouter.getRouter();

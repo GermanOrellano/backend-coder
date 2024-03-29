@@ -8,7 +8,7 @@ import {
   destroy,
 } from "../../controllers/users.controller.js";
 
-export default class UsersRouter extends CustomRouter {
+class UsersRouter extends CustomRouter {
   init() {
     this.create("/", ["PUBLIC"], create);
     this.read("/", ["ADMIN"], read);
@@ -18,3 +18,6 @@ export default class UsersRouter extends CustomRouter {
     this.destroy("/:uid", ["USER", "PREM"], destroy);
   }
 }
+
+const usersRouter = new UsersRouter();
+export default usersRouter.getRouter();

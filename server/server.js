@@ -8,7 +8,7 @@ import { engine } from "express-handlebars";
 import socketUtils from "./src/utils/socket.utils.js";
 import dbConnection from "./src/utils/db.js";
 
-import IndexRouter from "./src/routers/index.router.js";
+import router from "./src/routers/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
 import pathHandler from "./src/middlewares/pathHandler.mid.js";
 import __dirname from "./utils.js";
@@ -36,7 +36,7 @@ server.set("views", __dirname + "/src/views");
 
 const FileStore = sessionFileStore(expressSession);
 //middlewares
-server.use(cookieParser(process.env.SECRET_KEY));
+server.use(cookieParser(env.SECRET_KEY));
 
 //MEMORY STORE
 /* server.use(
@@ -86,8 +86,7 @@ server.use(express.static("public"));
 server.use(morgan("dev"));
 
 //routers
-const router = new IndexRouter();
-server.use("/", router.getRouter());
+server.use("/", router);
 server.use(errorHandler);
 server.use(pathHandler);
 

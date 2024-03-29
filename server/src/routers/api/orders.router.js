@@ -7,7 +7,7 @@ import {
   destroy,
 } from "../../controllers/orders.controller.js";
 
-export default class OrdersRouter extends CustomRouter {
+class OrdersRouter extends CustomRouter {
   init() {
     this.create("/", ["USER", "PREM"], create);
     this.read("/bills/:uid", ["ADMIN"], reportBill);
@@ -16,3 +16,6 @@ export default class OrdersRouter extends CustomRouter {
     this.destroy("/:oid", ["USER", "PREM"], destroy);
   }
 }
+
+const ordersRouter = new OrdersRouter();
+export default ordersRouter.getRouter();
