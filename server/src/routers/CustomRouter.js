@@ -1,6 +1,6 @@
 import { Router } from "express";
 import jwt from "jsonwebtoken";
-import { users } from "../data/mongo/mongo.manager.js";
+import users from "../data/mongo/users.mongo.js";
 
 export default class CustomRouter {
   constructor() {

@@ -25,7 +25,7 @@ class ProductsController {
         limit: req.query.limit || 5,
         page: req.query.page || 1,
       };
-      let filter = {};
+      const filter = {};
       if (req.query.title) {
         filter.title = new RegExp(req.query.title.trim(), "i");
       }

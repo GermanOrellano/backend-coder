@@ -1,6 +1,3 @@
-import User from "./models/user.model.js";
-import Product from "./models/product.model.js";
-import Order from "./models/order.model.js";
 import notFoundOne from "../../utils/notFoundOne.utils.js";
 import { Types } from "mongoose";
 
@@ -35,7 +32,7 @@ class MongoManager {
 
   async readOne(id) {
     try {
-      const one = await this.model.findById(id);
+      const one = await this.model.findById(id).lean();
       notFoundOne(one);
       return one;
     } catch (error) {
@@ -107,9 +104,4 @@ class MongoManager {
   }
 }
 
-const users = new MongoManager(User);
-const products = new MongoManager(Product);
-const orders = new MongoManager(Order);
-
-export { users, products, orders };
 export default MongoManager;

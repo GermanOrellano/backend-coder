@@ -1,26 +1,21 @@
 import fs from "fs";
-import crypto from "crypto";
+import notFoundOne from "../../utils/notFoundOne.utils.js";
 
 class UserManager {
-  static #users = [];
-
   init() {
     const exist = fs.existsSync(this.path);
-
     try {
       !exist
         ? fs.writeFileSync(this.path, JSON.stringify([], null, 3))
-        : (UserManager.#users = JSON.parse(
-            fs.readFileSync(this.path, "utf-8")
-          ));
+        : (this.users = JSON.parse(fs.readFileSync(this.path, "utf-8")));
     } catch (error) {
-      console.log(error.message);
       return error.message;
     }
   }
 
   constructor(path) {
     this.path = path;
+    this.users = [];
     this.init();
   }
 
@@ -29,94 +24,74 @@ class UserManager {
       if (!data.name || !data.photo || !data.email) {
         throw new Error("Name, photo and email are required");
       } else {
-        const user = {
-          id: crypto.randomBytes(12).toString("hex"),
-          name: data.name,
-          photo: data.photo,
-          email: data.email,
-        };
-
-        UserManager.#users.push(user);
+        this.users.push(data);
         await fs.promises.writeFile(
           this.path,
-          JSON.stringify(UserManager.#users, null, 3)
+          JSON.stringify(this.users, null, 3)
         );
-        console.log("Created user, id: " + user.id);
+        return data;
       }
     } catch (error) {
-      console.log(error.message);
-      return error.message;
+      throw error;
     }
   }
 
-  read() {
+  read(obj) {
     try {
-      if (UserManager.#users.length === 0) {
-        throw new Error("There aren't users");
+      if (this.users.length === 0) {
+        const error = new Error("There is nothing to read");
+        error.statusCode = 404;
+        throw error;
       } else {
-        console.log(UserManager.#users);
-        return UserManager.#users;
+        return this.users;
       }
     } catch (error) {
-      console.log(error.message);
-      return error.message;
+      throw error;
     }
   }
 
   readOne(id) {
     try {
-      const one = UserManager.#users.find((each) => each.id === id);
-      if (one) {
-        console.log(one);
-        return one;
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.users.find((each) => each._id === id);
+      notFoundOne(one);
+      return one;
     } catch (error) {
-      console.log(error.message);
-      return error.message;
+      throw error;
     }
   }
 
   async destroy(id) {
     try {
-      const one = UserManager.#users.find((each) => each.id === id);
-      if (one) {
-        UserManager.#users = UserManager.#users.filter((each) => each.id != id);
-        await fs.promises.writeFile(
-          this.path,
-          JSON.stringify(UserManager.#users, null, 3)
-        );
-        console.log("Destroyed ID: " + id);
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.readOne(id);
+      notFoundOne(one);
+      this.users = this.users.filter((each) => each._id != id);
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(this.users, null, 3)
+      );
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
   async update(id, data) {
     try {
-      const one = UserManager.#users.readOne(id);
-      if (!one) {
-        throw new Error("User not found");
-      } else {
-        one.name = data.name || one.name;
-        one.photo = data.photo || one.photo;
-        one.email = data.email || one.email;
-
-        await fs.promises.writeFile(
-          this.path,
-          JSON.stringify(UserManager.#users, null, 3)
-        );
+      const one = this.readOne(id);
+      notFoundOne(one);
+      for (let each in data) {
+        one[each] = data[each];
       }
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(this.users, null, 3)
+      );
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 }
 
 const user = new UserManager("./src/data/fs/files/users.json");
-
 export default user;

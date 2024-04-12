@@ -8,6 +8,7 @@ class OrdersController {
   create = async (req, res, next) => {
     try {
       const data = req.body;
+      data.user_id = req.user_id;
       const response = await this.service.create(data);
       if (response === "User ID, quantity and Product ID are required") {
         return next(error);
@@ -35,12 +36,12 @@ class OrdersController {
         limit: req.query.limit || 10,
         page: req.query.page || 1,
       };
-      let filter = {};
-      if (req.query.uid) {
-        filter.uid = new RegExp(req.query.uid.trim(), "i");
+      const filter = {};
+      if (req.user_id) {
+        filter.user_id = req.user_id;
       }
-      if (req.query._id === "asc") {
-        orderAndPaginate.sort._id = 1;
+      if (req.query.sort === "desc") {
+        orderAndPaginate.sort.title = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
       return res.success200(all);

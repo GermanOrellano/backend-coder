@@ -1,107 +1,83 @@
 import crypto from "crypto";
+import notFoundOne from "../../utils/notFoundOne.utils.js";
 
 class ProductManager {
   static #products = [];
 
   constructor() {}
-
-  create(dataProduct) {
+  async create(data) {
     try {
-      if (
-        !dataProduct.title ||
-        !dataProduct.photo ||
-        !dataProduct.price ||
-        !dataProduct.stock
-      ) {
+      if (!data.title || !data.photo || !data.price || !data.stock) {
         throw new Error("Title, photo, price and stock are required");
       } else {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
-          title: dataProduct.title,
-          photo: dataProduct.photo,
-          price: dataProduct.price,
-          stock: dataProduct.stock,
+          title: data.title,
+          photo: data.photo,
+          price: data.price,
+          stock: data.stock,
         };
         ProductManager.#products.push(product);
+        return product;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
-  read() {
+  read(obj) {
     try {
       if (ProductManager.#products.length === 0) {
-        throw new Error("There aren't users");
+        const error = new Error("There is nothing to read");
+        error.statusCode = 404;
+        throw error;
       } else {
-        return console.log(ProductManager.#products);
+        return ProductManager.#products;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
-  readOne(n) {
+  readOne(id) {
     try {
-      if (n > ProductManager.#products.length) {
-        throw new Error("The ID entered doesn't exist");
+      const one = ProductManager.#products.find((each) => each.id === id);
+      if (!one) {
+        const error = new Error("The ID entered doesn't exist");
+        throw error;
       } else {
-        console.log(ProductManager.#products.find((each) => each.id === n));
+        return one;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
   destroy(id) {
     try {
-      const one = ProductManager.#products.find((each) => each.id === id);
-      if (one) {
-        ProductManager.#products = ProductManager.#products.filter(
-          (each) => each.id != id
-        );
-        console.log("Destroyed ID: " + id);
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.readOne(id);
+      notFoundOne(one);
+      ProductManager.#products = ProductManager.#products.filter(
+        (each) => each.id != id
+      );
+      return one;
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   }
 
   update(id, data) {
     try {
-      const one = ProductManager.#products.readOne(id);
-      if (!one) {
-        throw new Error("Product not found");
-      } else {
-        one.title = data.title || one.title;
-        one.photo = data.photo || one.photo;
-        one.price = data.price || one.price;
-        one.stock = data.stock || one.stock;
+      const one = this.readOne(id);
+      notFoundOne(one);
+      for (let each in data) {
+        one[each] = data[each];
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 }
 
-const newProduct = new ProductManager();
-
-newProduct.create({
-  title: "Yerba Mate",
-  photo: "foto de yerba",
-  price: 1000,
-  stock: 5,
-});
-
-newProduct.create({
-  title: "Azúcar",
-  photo: "foto de azucar",
-  price: 2800,
-  stock: 3,
-});
-
-newProduct.read();
-newProduct.readOne(5);
-newProduct.destroy("57d904ef0e95fa157f397f596");
+const product = new ProductManager();
+export default product;

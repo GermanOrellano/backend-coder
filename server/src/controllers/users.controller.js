@@ -25,8 +25,9 @@ class UsersController {
         limit: req.query.limit || 10,
         page: req.query.page || 1,
         sort: { email: 1 },
+        lean: true,
       };
-      let filter = {};
+      const filter = {};
       if (req.query.email) {
         filter.email = new RegExp(req.query.email.trim(), "i");
       }

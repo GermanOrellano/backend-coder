@@ -4,8 +4,8 @@ import CustomRouter from "./CustomRouter.js";
 
 class IndexRouter extends CustomRouter {
   init() {
-    this.use("api", apiRouter);
-    this.use("/", viewsRouter);
+    this.router.use("/api", apiRouter);
+    this.router.use("/", viewsRouter);
   }
 }
 

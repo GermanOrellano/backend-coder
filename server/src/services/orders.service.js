@@ -1,13 +1,13 @@
-import { orders } from "../data/mongo/mongo.manager.js";
+import repository from "../repositories/orders.rep.js";
 
 class OrdersService {
   constructor() {
-    this.model = orders;
+    this.repository = repository;
   }
 
   create = async (data) => {
     try {
-      const response = await this.model.create(data);
+      const response = await this.repository.create(data);
       return response;
     } catch (error) {
       throw error;
@@ -16,7 +16,7 @@ class OrdersService {
 
   reportBill = async (uid) => {
     try {
-      const response = await this.model.reportBill(uid);
+      const response = await this.repository.reportBill(uid);
       return response;
     } catch (error) {
       throw error;
@@ -25,7 +25,7 @@ class OrdersService {
 
   read = async ({ filter, orderAngPaginate }) => {
     try {
-      const response = await this.model.read({ filter, orderAngPaginate });
+      const response = await this.repository.read({ filter, orderAngPaginate });
       return response;
     } catch (error) {
       throw error;
@@ -34,7 +34,7 @@ class OrdersService {
 
   update = async (oid, data) => {
     try {
-      const response = await this.model.update(oid, data);
+      const response = await this.repository.update(oid, data);
       return response;
     } catch (error) {
       throw error;
@@ -43,7 +43,7 @@ class OrdersService {
 
   destroy = async (oid) => {
     try {
-      const response = await this.model.destroy(oid);
+      const response = await this.repository.destroy(oid);
       return response;
     } catch (error) {
       throw error;

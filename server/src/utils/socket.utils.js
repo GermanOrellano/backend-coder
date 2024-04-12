@@ -1,6 +1,6 @@
 import { socketServer } from "../../server.js";
 //import product from "../data/fs/products.fs.js";
-import { products } from "../data/mongo/mongo.manager.js";
+import products from "../data/mongo/products.mongo.js";
 
 export default (socket) => {
   console.log("socket client " + socket.id + "connected");
