@@ -24,7 +24,7 @@ selector.addEventListener("click", async () => {
         text: response.message,
         icon: "success",
       });
-      location.replace("/");
+      //location.replace("/");
     } else {
       Swal.fire({
         icon: "error",

@@ -9,7 +9,7 @@ class UsersRep {
   }
 
   create = async (data) => {
-    date = new UserDTO(data);
+    data = new UserDTO(data);
     const response = await this.model.create(data);
     return response;
   };

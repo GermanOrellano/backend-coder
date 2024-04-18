@@ -3,10 +3,11 @@ import { Strategy as LocalStrategy } from "passport-local";
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
 import { Strategy as GithubStrategy } from "passport-github2";
 import { ExtractJwt, Strategy as JwtStrategy } from "passport-jwt";
-import { createHash, verifyaHash } from "../utils/hash.util.js";
+import { createHash, verifyHash } from "../utils/hash.util.js";
 import { createToken } from "../utils/token.util.js";
 //import users from "../data/mongo/mongo.manager.js";
 import repository from "../repositories/users.rep.js";
+import errors from "../utils/errors/errors.js";
 
 const { GOOGLE_ID, GOOGLE_CLIENT, GITHUB_ID, GITHUB_CLIENT, SECRET } =
   process.env;
@@ -19,10 +20,7 @@ passport.use(
       try {
         let one = await repository.readByEmail(email);
         if (one) {
-          return done(null, false, {
-            message: "Already exist",
-            statusCode: 400,
-          });
+          return done(null, false, errors.exist);
         } else {
           let data = req.body;
           data.password = createHash(password);
@@ -43,12 +41,13 @@ passport.use(
     async (req, email, password, done) => {
       try {
         const user = await repository.readByEmail(email);
-        if (user?.verified && verifyaHash(password, user.password)) {
+        const verify = verifyHash(password, user.password);
+        if (user?.verified && verify) {
           const token = createToken({ email, role: user.role });
           req.token = token;
           return done(null, user);
         } else {
-          return done(null, false, { message: "Bad auth from passport" });
+          return done(null, false, errors.badAuth);
         }
       } catch (error) {
         return done(error);
@@ -127,10 +126,10 @@ passport.use(
   "jwt",
   new JwtStrategy(
     {
+      secretOrKey: SECRET,
       jwtFromRequest: ExtractJwt.fromExtractors([
         (req) => req?.cookies["token"],
       ]),
-      secretOrKey: SECRET,
     },
     async (payload, done) => {
       try {

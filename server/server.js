@@ -16,6 +16,7 @@ import cookieParser from "cookie-parser";
 import expressSession from "express-session";
 import sessionFileStore from "session-file-store";
 import cors from "cors";
+import compression from "express-compression";
 
 //server
 const server = express();
@@ -84,6 +85,11 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.use(morgan("dev"));
+server.use(
+  compression({
+    brotli: { enabled: true, zlib: {} },
+  })
+);
 
 //routers
 server.use("/", router);

@@ -1,4 +1,6 @@
 import service from "../services/orders.service.js";
+import CustomError from "../utils/errors/CustomError.util.js";
+import errors from "../utils/errors/errors.js";
 
 class OrdersController {
   constructor() {
@@ -44,7 +46,11 @@ class OrdersController {
         orderAndPaginate.sort.title = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      return res.success200(all);
+      if (all.docs.length > 0) {
+        return res.success200(all);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -55,7 +61,11 @@ class OrdersController {
       const { oid } = req.params;
       const data = req.body;
       const oOne = await this.service.update(oid, data);
-      return res.success200(oOne);
+      if (oOne) {
+        return res.success200(oOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -65,7 +75,11 @@ class OrdersController {
     try {
       const { oid } = req.params;
       const dOne = await this.service.destroy(oid);
-      return res.success200(dOne);
+      if (dOne) {
+        return res.success200(dOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }

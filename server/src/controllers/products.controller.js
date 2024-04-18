@@ -1,4 +1,6 @@
 import service from "../services/products.service.js";
+import CustomError from "../utils/errors/CustomError.util.js";
+import errors from "../utils/errors/errors.js";
 
 class ProductsController {
   constructor() {
@@ -10,7 +12,8 @@ class ProductsController {
       const data = req.body;
       const response = await this.service.create(data);
       if (response === "Title, photo, price and stock are required") {
-        return next(error);
+        //revisar error
+        CustomError.new(errors.error);
       } else {
         return res.success201(response);
       }
@@ -33,7 +36,11 @@ class ProductsController {
         orderAndPaginate.sort.price = 1;
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      return res.success200(all);
+      if (all.docs.length > 0) {
+        return res.success200(all);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -43,7 +50,11 @@ class ProductsController {
     try {
       const { pid } = req.params;
       const pOne = await this.service.readOne(pid);
-      return res.success200(pOne);
+      if (pOne) {
+        return res.success200(pOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -54,7 +65,11 @@ class ProductsController {
       const { pid } = req.params;
       const data = req.body;
       const uOne = await this.service.update(pid, data);
-      return res.success200(uOne);
+      if (uOne) {
+        return res.success200(uOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -64,7 +79,11 @@ class ProductsController {
     try {
       const { pid } = req.params;
       const dOne = await this.service.destroy(pid);
-      return res.success200(dOne);
+      if (dOne) {
+        return res.success200(dOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }

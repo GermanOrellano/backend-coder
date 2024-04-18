@@ -1,5 +1,5 @@
 import fs from "fs";
-import notFoundOne from "../../utils/notFoundOne.utils.js";
+import notFoundOne from "../../utils/errors/CustomError.util.js";
 
 class OrdersManager {
   init() {

@@ -1,6 +1,8 @@
 import { Router } from "express";
 import jwt from "jsonwebtoken";
 import users from "../data/mongo/users.mongo.js";
+import errors from "../utils/errors/errors.js";
+import env from "../utils/env.util.js";
 
 export default class CustomRouter {
   constructor() {
@@ -17,7 +19,7 @@ export default class CustomRouter {
       try {
         await each.apply(this, params);
       } catch (error) {
-        params[1].json({ statusCode: 500, message: error.message });
+        params[1].json(errors.fatal);
       }
     });
   }
@@ -26,10 +28,10 @@ export default class CustomRouter {
       res.json({ statusCode: 200, response: payload });
     res.success201 = (payload) =>
       res.json({ statusCode: 201, response: payload });
-    res.error400 = (message) => res.json({ statusCode: 400, message });
-    res.error401 = () => res.json({ statusCode: 401, message: "Bad auth" });
-    res.error403 = () => res.json({ statusCode: 403, message: "Forbidden" });
-    res.error404 = () => res.json({ statusCode: 404, message: "Not found" });
+    res.error400 = (message) => res.json(errors.message(message));
+    res.error401 = () => res.json(errors.badAuth);
+    res.error403 = () => res.json(errors.forbidden);
+    res.error404 = () => res.json(errors.notFound);
     return next();
   }
   policies = (arrayOfPolicies) => async (req, res, next) => {
@@ -38,7 +40,7 @@ export default class CustomRouter {
       let token = req.cookies["token"];
       if (!token) return res.error401();
       else {
-        const data = jwt.verify(token, process.env.SECRET);
+        const data = jwt.verify(token, env.SECRET); //ya no es process.env
         if (!data) return res.error400("Bad auth by token");
         else {
           const { email, role } = data;

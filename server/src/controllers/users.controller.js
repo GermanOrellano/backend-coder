@@ -1,4 +1,6 @@
 import service from "../services/users.service.js";
+import CustomError from "../utils/errors/CustomError.util.js";
+import errors from "../utils/errors/errors.js";
 
 class UsersController {
   constructor() {
@@ -35,7 +37,11 @@ class UsersController {
         orderAndPaginate.sort.email = 1;
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      return res.success200(all);
+      if (all.docs.length > 0) {
+        return res.success200(all);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -45,7 +51,11 @@ class UsersController {
     try {
       const { uid } = req.params;
       const one = await this.service.readOne(uid);
-      return res.success200(one);
+      if (one) {
+        return res.success200(one);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -55,7 +65,11 @@ class UsersController {
     try {
       const { email } = req.params;
       const one = await this.service.readByEmail(email);
-      return res.success200(one);
+      if (one) {
+        return res.success200(one);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -66,7 +80,11 @@ class UsersController {
       const { uid } = req.params;
       const data = req.body;
       const uOne = await this.service.update(uid, data);
-      return res.success200(uOne);
+      if (uOne) {
+        return res.success200(uOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
@@ -76,7 +94,11 @@ class UsersController {
     try {
       const { uid } = req.params;
       const dOne = await this.service.destroy(uid);
-      return res.success200(dOne);
+      if (dOne) {
+        return res.success200(dOne);
+      } else {
+        CustomError.new(errors.notFound);
+      }
     } catch (error) {
       return next(error);
     }
