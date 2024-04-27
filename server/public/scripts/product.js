@@ -17,7 +17,6 @@ selector.addEventListener("click", async () => {
 
     let response = await fetch("/api/products", opts);
     response = await response.json();
-    console.log(response);
     if (response.statusCode === 201) {
       Swal.fire({
         title: "New Product!",

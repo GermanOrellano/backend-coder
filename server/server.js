@@ -17,12 +17,14 @@ import expressSession from "express-session";
 import sessionFileStore from "session-file-store";
 import cors from "cors";
 import compression from "express-compression";
+import winston from "./src/middlewares/winston.mid.js";
+import winstonLog from "./src/utils/logger/index.js";
 
 //server
 const server = express();
 const PORT = env.PORT || 8080;
 const ready = () => {
-  console.log(`Express server listening on port: ${PORT}`);
+  winstonLog.INFO(`Express server listening on port: ${PORT}`);
   dbUtil();
 };
 const httpServer = createServer(server);
@@ -85,6 +87,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.use(morgan("dev"));
+server.use(winston);
 server.use(
   compression({
     brotli: { enabled: true, zlib: {} },

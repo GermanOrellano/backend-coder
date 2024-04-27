@@ -1,5 +1,6 @@
 import args from "../utils/args.util.js";
 import "dotenv/config.js";
+import winstonLog from "../utils/logger/index.js";
 
 const environment = args.env;
 
@@ -7,7 +8,7 @@ let dao = {};
 
 switch (environment) {
   case "test":
-    console.log("FS CONNECTED");
+    winstonLog.INFO("FS CONNECTED");
     const { default: productsFs } = await import("./fs/products.fs.js");
     const { default: usersFs } = await import("./fs/users.fs.js");
     const { default: ordersFs } = await import("./fs/orders.fs.js");
@@ -19,7 +20,7 @@ switch (environment) {
     break;
 
   case "dev":
-    console.log("MONGO CONNECTED");
+    winstonLog.INFO("MONGO CONNECTED");
     const { default: productsMongoDev } = await import(
       "./mongo/products.mongo.js"
     );
@@ -33,7 +34,7 @@ switch (environment) {
     break;
 
   default:
-    console.log("MONGO CONNECTED");
+    winstonLog.INFO("MONGO CONNECTED");
     const { default: productsMongo } = await import(
       "./mongo/products.mongo.js"
     );

@@ -1,6 +1,7 @@
 import service from "../services/products.service.js";
 import CustomError from "../utils/errors/CustomError.util.js";
 import errors from "../utils/errors/errors.js";
+import winstonLog from "../utils/logger/index.js";
 
 class ProductsController {
   constructor() {
@@ -11,6 +12,7 @@ class ProductsController {
     try {
       const data = req.body;
       const response = await this.service.create(data);
+      winstonLog.INFO(data);
       if (response === "Title, photo, price and stock are required") {
         //revisar error
         CustomError.new(errors.error);

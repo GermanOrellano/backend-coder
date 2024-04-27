@@ -1,3 +1,5 @@
+import winstonLog from "../../src/utils/logger/index.js";
+
 const selector = document.querySelector("#login");
 
 selector.addEventListener("click", async () => {
@@ -15,7 +17,6 @@ selector.addEventListener("click", async () => {
 
     let response = await fetch("/api/auth/login", opts);
     response = await response.json();
-    console.log(response);
 
     if (response.statusCode === 200) {
       //localStorage.setItem("token", response.token);
@@ -33,6 +34,6 @@ selector.addEventListener("click", async () => {
       });
     }
   } catch (error) {
-    console.log(error);
+    winstonLog.WARN(error.message);
   }
 });

@@ -38,6 +38,8 @@
   });
  */
 
+import winstonLog from "../../src/utils/logger/index.js";
+
 fetch("/api/auth/", { method: "POST" })
   .then((res) => res.json())
   .then((res) => {
@@ -63,7 +65,7 @@ fetch("/api/auth/", { method: "POST" })
             location.replace("/");
           }
         } catch (error) {
-          console.log(error);
+          winstonLog.WARN(error.message);
         }
       });
     } else {
