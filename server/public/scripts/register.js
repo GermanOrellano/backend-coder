@@ -1,3 +1,5 @@
+import winstonLog from "../../src/utils/logger/index.js";
+
 const selector = document.querySelector("#register");
 
 selector.addEventListener("click", async () => {
@@ -34,6 +36,6 @@ selector.addEventListener("click", async () => {
       });
     }
   } catch (error) {
-    console.log(error);
+    winstonLog.WARN(error.message);
   }
 });

@@ -1,102 +1,80 @@
 import crypto from "crypto";
+import notFoundOne from "../../utils/notFoundOne.utils.js";
 
 class UserManager {
   static #users = [];
 
   constructor() {}
-
-  create(dataUser) {
+  async create(data) {
     try {
-      if (!dataUser.name || !dataUser.photo || !dataUser.email) {
+      if (!data.name || !data.photo || !data.email) {
         throw new Error("Name, photo and email are required");
       } else {
         const user = {
           id: crypto.randomBytes(12).toString("hex"),
-          name: dataUser.name,
-          photo: dataUser.photo,
-          email: dataUser.email,
+          name: data.name,
+          photo: data.photo,
+          email: data.email,
         };
         UserManager.#users.push(user);
+        return user;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
-  read() {
+  read(obj) {
     try {
       if (UserManager.#users.length === 0) {
-        throw new Error("There aren't users");
+        const error = new Error("There is nothing to read");
+        error.statusCode = 404;
+        throw error;
       } else {
-        return console.log(UserManager.#users);
+        return UserManager.#users;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
-  readOne(n) {
+  readOne(id) {
     try {
-      if (n > UserManager.#users.length) {
-        throw new Error("The ID entered doesn't exist");
+      const one = UserManager.#users.find((each) => each.id === id);
+      if (!one) {
+        const error = new Error("The ID entered doesn't exist");
+        throw error;
       } else {
-        console.log(UserManager.#users.find((each) => each.id === n));
+        return one;
       }
     } catch (error) {
-      return console.log(error.message);
+      throw error;
     }
   }
 
   destroy(id) {
     try {
-      const one = UserManager.#users.find((each) => each.id === id);
-      if (one) {
-        UserManager.#users = UserManager.#users.filter((each) => each.id != id);
-        console.log("Destroyed ID: " + id);
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.readOne(id);
+      notFoundOne(one);
+      UserManager.#users = UserManager.#users.filter((each) => each.id != id);
+      return one;
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   }
 
   update(id, data) {
     try {
-      const one = UserManager.#users.readOne(id);
-      if (!one) {
-        throw new Error("User not found");
-      } else {
-        one.name = data.name || one.name;
-        one.photo = data.photo || one.photo;
-        one.email = data.email || one.email;
+      const one = this.readOne(id);
+      notFoundOne(one);
+      for (let each in data) {
+        one[each] = data[each];
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 }
 
-const newUser = new UserManager();
-
-newUser.create({
-  name: "German",
-  photo: "Foto de usuario",
-  email: "german@mail.com",
-});
-
-newUser.create({
-  name: "Federico",
-  photo: "Foto de usuario",
-  email: "federico@mail.com",
-});
-
-newUser.create({
-  name: "Antonella",
-  photo: "Foto de usuario",
-  email: "antonella@mail.com",
-});
-
-newUser.read();
-newUser.readOne(5);
-newUser.destroy();
+const user = new UserManager();
+export default user;

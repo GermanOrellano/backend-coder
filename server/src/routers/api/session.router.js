@@ -1,123 +1,36 @@
-import { Router } from "express";
-import has8char from "../../middlewares/has8char.mid.js";
+import CustomRouter from "../CustomRouter.js";
+import {
+  register,
+  login,
+  signout,
+  verifyAccount,
+} from "../../controllers/session.controller.js";
+import passCallBack from "../../middlewares/passCallBack.mid.js";
 import passport from "../../middlewares/passport.mid.js";
-import isAuth from "../../middlewares/isAuth.mid.js";
 
-const sessionRouter = Router();
-
-sessionRouter.post(
-  "/register",
-  has8char,
-  passport.authenticate("register", {
-    session: false,
-    failureRedirect: "/api/auth/badauth",
-  }),
-  async (req, res, next) => {
-    try {
-      return res.json({
-        statusCode: 200,
-        message: "Registered",
-      });
-    } catch (error) {
-      return next(error);
-    }
+class SessionRouter extends CustomRouter {
+  init() {
+    this.create("/register", ["PUBLIC"], passCallBack("register"), register);
+    this.create("/login", ["PUBLIC"], passCallBack("login"), login);
+    this.create(
+      "/google",
+      ["PUBLIC"],
+      passport.authenticate("google", { scope: ["email", "profile"] })
+    );
+    /* this.read("/google/cb"); */
+    this.create("/github");
+    /* this.read("/github/cb"); */
+    this.create(
+      "/signout",
+      ["USER", "ADMIN", "PREM"],
+      passCallBack("jwt"),
+      signout
+    );
+    this.create("/verify", ["PUBLIC"], verifyAccount);
+    /* this.read("/signout/cb");
+    this.read("/badauth"); */
   }
-);
+}
 
-sessionRouter.post(
-  "/login",
-  passport.authenticate("login", {
-    session: false,
-    failureRedirect: "/api/auth/badauth",
-  }),
-  async (req, res, next) => {
-    try {
-      return res
-        .cookie("token", req.token, {
-          maxAge: 7 * 24 * 60 * 60 * 1000,
-          httpOnly: true,
-        })
-        .json({
-          statusCode: 200,
-          message: "Logged in",
-        });
-    } catch (error) {
-      return next(error);
-    }
-  }
-);
-
-//google
-sessionRouter.get(
-  "/google",
-  passport.authenticate("google", { scope: ["email", "profile"] })
-);
-
-//google-cb
-sessionRouter.get(
-  "/google/cb",
-  passport.authenticate("google", {
-    session: false,
-    failureRedirect: "/api/auth/badauth",
-  }),
-  async (req, res, next) => {
-    try {
-      return res.json({
-        statusCode: 200,
-        message: "Logged in with Google",
-        session: req.session,
-      });
-    } catch (error) {
-      return next(error);
-    }
-  }
-);
-
-//github
-sessionRouter.get(
-  "/github",
-  passport.authenticate("github", { scope: ["user:email"] })
-);
-
-sessionRouter.post(
-  "/signout",
-  passport.authenticate("jwt", {
-    session: false,
-    failureRedirect: "/api/auth/signout/cb",
-  }),
-  async (req, res, next) => {
-    try {
-      return res.clearCookie("token").json({
-        statusCode: 200,
-        message: "Signed out",
-      });
-    } catch (error) {
-      return next(error);
-    }
-  }
-);
-
-//signout cb
-sessionRouter.get("/signout/cb", (req, res, next) => {
-  try {
-    return res.json({
-      statusCode: 400,
-      message: "Already done",
-    });
-  } catch (error) {
-    return next(error);
-  }
-});
-
-sessionRouter.get("/badauth", (req, res, next) => {
-  try {
-    return res.json({
-      statusCode: 401,
-      message: "Bad Auth",
-    });
-  } catch (error) {
-    next(error);
-  }
-});
-
-export default sessionRouter;
+const sessionRouter = new SessionRouter();
+export default sessionRouter.getRouter();
