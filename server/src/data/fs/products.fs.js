@@ -1,18 +1,13 @@
 import fs from "fs";
-import crypto from "crypto";
+import notFoundOne from "../../utils/errors/CustomError.util.js";
 
 class ProductManager {
-  static #products = [];
-
   init() {
     const exist = fs.existsSync(this.path);
-
     try {
       !exist
         ? fs.writeFileSync(this.path, JSON.stringify([], null, 3))
-        : (ProductManager.#products = JSON.parse(
-            fs.readFileSync(this.path, "utf-8")
-          ));
+        : (this.products = JSON.parse(fs.readFileSync(this.path, "utf-8")));
     } catch (error) {
       return error.message;
     }
@@ -20,6 +15,7 @@ class ProductManager {
 
   constructor(path) {
     this.path = path;
+    this.products = [];
     this.init();
   }
 
@@ -28,93 +24,74 @@ class ProductManager {
       if (!data.title || !data.photo || !data.price || !data.stock) {
         throw new Error("Title, photo, price and stock are required");
       } else {
-        const product = {
-          id: crypto.randomBytes(12).toString("hex"),
-          title: data.title,
-          photo: data.photo,
-          price: data.price,
-          stock: data.stock,
-        };
-
-        ProductManager.#products.push(product);
+        this.products.push(data);
         await fs.promises.writeFile(
           this.path,
-          JSON.stringify(ProductManager.#products, null, 3)
+          JSON.stringify(this.products, null, 3)
         );
-        console.log("Created product, id: " + product.id);
+        return data;
       }
     } catch (error) {
-      throw error.message;
+      throw error;
     }
   }
 
-  read() {
+  read(obj) {
     try {
-      if (ProductManager.#products.length === 0) {
-        throw new Error("There aren't products");
+      if (this.products.length === 0) {
+        const error = new Error("There is nothing to read");
+        error.statusCode = 404;
+        throw error;
       } else {
-        return ProductManager.#products;
+        return this.products;
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
   readOne(id) {
     try {
-      const one = ProductManager.#products.find((each) => each.id === id);
-      if (one) {
-        console.log(one);
-        return one;
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.products.find((each) => each._id === id);
+      notFoundOne(one);
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
   async destroy(id) {
     try {
-      const one = ProductManager.#products.find((each) => each.id === id);
-      if (one) {
-        ProductManager.#products = ProductManager.#products.filter(
-          (each) => each.id != id
-        );
-        await fs.promises.writeFile(
-          this.path,
-          JSON.stringify(ProductManager.#products, null, 3)
-        );
-      } else {
-        throw new Error("The id " + id + " wasn't found");
-      }
+      const one = this.readOne(id);
+      notFoundOne(one);
+      this.products = this.products.filter((each) => each._id != id);
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(this.products, null, 3)
+      );
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
   async update(id, data) {
     try {
-      const one = ProductManager.#products.readOne(id);
-      if (!one) {
-        throw new Error("Product not found");
-      } else {
-        one.title = data.title || one.title;
-        one.photo = data.photo || one.photo;
-        one.price = data.price || one.price;
-        one.stock = data.stock || one.stock;
-
-        await fs.promises.writeFile(
-          this.path,
-          JSON.stringify(ProductManager.#products, null, 3)
-        );
+      const one = this.readOne(id);
+      notFoundOne(one);
+      for (let each in data) {
+        one[each] = data[each];
       }
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(this.products, null, 3)
+      );
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 }
 
 const product = new ProductManager("./src/data/fs/files/products.json");
-
 export default product;

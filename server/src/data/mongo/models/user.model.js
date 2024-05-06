@@ -11,6 +11,8 @@ const schema = new Schema(
     email: { type: String, required: true, unique: true, index: true },
     role: { type: Number, default: 0 },
     password: { type: String, required: true },
+    verified: { type: Boolean, default: false },
+    verifiedCode: { type: String, required: true },
   },
   { timestamps: true }
 );

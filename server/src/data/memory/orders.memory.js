@@ -1,86 +1,83 @@
 import crypto from "crypto";
+import notFoundOne from "../../utils/notFoundOne.utils.js";
 
 class OrdersManager {
   static #orders = [];
-
   constructor() {}
 
-  create(dataOrders) {
+  async create(data) {
     try {
-      if (!dataOrders.uid || !dataOrders.quantity || !dataOrders.pid) {
+      if (!data.uid || !data.quantity || !data.pid) {
         throw new Error("User ID, quantity and Product ID are required");
       } else {
         const order = {
           id: crypto.randomBytes(12).toString("hex"),
-          uid: dataOrders.uid,
-          quantity: dataOrders.quantity,
-          pid: dataOrders.pid,
+          uid: data.uid,
+          quantity: data.quantity,
+          pid: data.pid,
           state: "reserved",
         };
-
         OrdersManager.#orders.push(order);
+        return order;
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
-  read() {
+  read(obj) {
     try {
       if (OrdersManager.#orders.length === 0) {
-        throw new Error("There aren't orders");
+        const error = new Error("There is nothing to read");
+        error.statusCode = 404;
+        throw error;
       } else {
-        return console.log(OrdersManager.#orders);
+        return OrdersManager.#orders;
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
-  readOne(uid) {
+  readOne(id) {
     try {
-      const one = OrdersManager.#orders.find((each) => each.id === uid);
-      if (one) {
+      const one = OrdersManager.#orders.find((each) => each.id === id);
+      if (!one) {
+        const error = new Error("The ID entered doesn't exist");
+        throw error;
+      } else {
         return one;
-      } else {
-        throw new Error("The ID entered doesn't exist");
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
-  destroy(oid) {
+  destroy(id) {
     try {
-      const one = OrdersManager.#orders.find((each) => each.id === oid);
-
-      if (!one) {
-        throw new Error("The id " + oid + " wasn't found");
-      } else {
-        OrdersManager.#orders = OrdersManager.#orders.filter(
-          (each) => each.id != oid
-        );
-        console.log("Destroyed ID: " + oid);
-      }
+      const one = this.readOne(id);
+      notFoundOne(one);
+      OrdersManager.#orders = OrdersManager.#orders.filter(
+        (each) => each.id != id
+      );
+      return one;
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 
-  update(oid, quantity, state) {
+  update(id, data) {
     try {
-      const one = OrdersManager.#orders.find((each) => each.id === oid);
-
-      if (!one) {
-        throw new Error("The id " + oid + " wasn't found");
-      } else {
-        one.quantity = quantity || one.quantity;
-        one.state = state || one.state;
+      const one = this.readOne(id);
+      notFoundOne(one);
+      for (let each in data) {
+        one[each] = data[each];
       }
     } catch (error) {
-      return error.message;
+      throw error;
     }
   }
 }
 
 const order = new OrdersManager();
+export default order;

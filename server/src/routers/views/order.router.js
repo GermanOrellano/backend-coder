@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { orders, users } from "../../data/mongo/mongo.manager.js";
+import orders from "../../data/mongo/orders.mongo.js";
+import users from "../../data/mongo/users.mongo.js";
 
 const orderRouter = Router();
 

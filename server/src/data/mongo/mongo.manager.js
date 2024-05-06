@@ -1,7 +1,3 @@
-import User from "./models/user.model.js";
-import Product from "./models/product.model.js";
-import Order from "./models/order.model.js";
-import notFoundOne from "../../utils/notFoundOne.utils.js";
 import { Types } from "mongoose";
 
 class MongoManager {
@@ -22,11 +18,6 @@ class MongoManager {
     try {
       let { filter, orderAndPaginate } = obj;
       const all = await this.model.paginate(filter, orderAndPaginate);
-      if (all.totalPages === 0) {
-        const error = new Error("There is nothing to read");
-        error.statusCode = 404;
-        throw error;
-      }
       return all;
     } catch (error) {
       throw error;
@@ -35,8 +26,7 @@ class MongoManager {
 
   async readOne(id) {
     try {
-      const one = await this.model.findById(id);
-      notFoundOne(one);
+      const one = await this.model.findById(id).lean();
       return one;
     } catch (error) {
       throw error;
@@ -47,7 +37,6 @@ class MongoManager {
     try {
       const opt = { new: true };
       const one = await this.model.findByIdAndUpdate(id, data, opt);
-      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -57,7 +46,6 @@ class MongoManager {
   async destroy(id) {
     try {
       const one = await this.model.findByIdAndDelete(id);
-      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -107,8 +95,4 @@ class MongoManager {
   }
 }
 
-const users = new MongoManager(User);
-const products = new MongoManager(Product);
-const orders = new MongoManager(Order);
-
-export { users, products, orders };
+export default MongoManager;

@@ -1,8 +1,9 @@
+import CustomError from "./errors/CustomError.util.js";
+import errors from "./errors/errors.js";
+
 function has8char(password) {
   if (password.lenght < 8) {
-    const error = new Error("Password must have a least 8 characters");
-    error.statusCode = 400;
-    throw error;
+    CustomError.new(errors.message("Password must have a least 8 characters"));
   }
 }
 

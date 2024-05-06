@@ -1,14 +1,31 @@
-import { Router } from "express";
+import CustomRouter from "../CustomRouter.js";
 import productsRouter from "./products.router.js";
+import sessionRouter from "./session.router.js";
 import usersRouter from "./users.router.js";
 import ordersRouter from "./orders.router.js";
-import sessionRouter from "./session.router.js";
+import winstonLog from "../../utils/logger/index.js";
+//import passCallbackMid from "../../middlewares/passCallback.mid.js";
 
-const apiRouter = Router();
+class ApiRouter extends CustomRouter {
+  init() {
+    this.router.use("/users", usersRouter);
+    this.router.use("/products", productsRouter);
+    this.router.use("/orders", ordersRouter);
+    this.router.use("/auth", sessionRouter);
+    this.router.use("/loggers", async (req, res, next) => {
+      try {
+        winstonLog.HTTP("LOG HTTP");
+        winstonLog.INFO("LOG INFO");
+        winstonLog.WARN("LOG WARN");
+        winstonLog.ERROR("LOG ERROR");
 
-apiRouter.use("/users", usersRouter);
-apiRouter.use("/products", productsRouter);
-apiRouter.use("/orders", ordersRouter);
-apiRouter.use("/auth", sessionRouter);
+        return res.json({ response: "WINSTON OK" });
+      } catch (error) {
+        return next(error);
+      }
+    });
+  }
+}
 
-export default apiRouter;
+const apiRouter = new ApiRouter();
+export default apiRouter.getRouter();
