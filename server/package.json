@@ -7,7 +7,9 @@
   "scripts": {
     "start": "nodemon ./server.js",
     "dev": "nodemon ./server.js --env dev",
-    "test": "nodemon ./server.js --env test"
+    "test": "nodemon ./server.js --env test",
+    "image": "docker build -t appcoder .",
+    "container": "docker run -p 9000:9000 appcoder"
   },
   "keywords": [],
   "author": "",

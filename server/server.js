@@ -7,6 +7,8 @@ import morgan from "morgan";
 import { engine } from "express-handlebars";
 import socketUtils from "./src/utils/socket.utils.js";
 import dbUtil from "./src/utils/db.util.js";
+import compression from "express-compression";
+import cluster from "cluster";
 
 import router from "./src/routers/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
@@ -16,7 +18,6 @@ import cookieParser from "cookie-parser";
 import expressSession from "express-session";
 import sessionFileStore from "session-file-store";
 import cors from "cors";
-import compression from "express-compression";
 import winston from "./src/middlewares/winston.mid.js";
 import winstonLog from "./src/utils/logger/index.js";
 
@@ -29,7 +30,6 @@ const ready = () => {
 };
 const httpServer = createServer(server);
 const socketServer = new Server(httpServer);
-httpServer.listen(PORT, ready);
 socketServer.on("connection", socketUtils);
 
 //templates
@@ -48,7 +48,7 @@ const FileStore = sessionFileStore(expressSession);
     saveUninitialized: true,
     cookie: { maxAge: 60000 },
   })
-  ); */
+); */
 
 //FILE STORE
 /* server.use(
@@ -62,11 +62,11 @@ const FileStore = sessionFileStore(expressSession);
         retries: 3,
       }),
     })
-    ); */
+  ); */
 
 //MONGO STORE
 /* server.use(
-      expressSession({
+    expressSession({
         secret: process.env.SECRET_KEY,
         resave: true,
         saveUninitialized: true,
@@ -75,7 +75,7 @@ const FileStore = sessionFileStore(expressSession);
           mongoUrl: process.env.DB_LINK,
         }),
       })
-      ); */
+    ); */
 server.use(
   cors({
     origin: true,
@@ -98,5 +98,14 @@ server.use(
 server.use("/", router);
 server.use(errorHandler);
 server.use(pathHandler);
+
+//clusters
+if (cluster.isPrimary) {
+  winstonLog.INFO("Primary ID:" + process.pid);
+  cluster.fork();
+} else {
+  winstonLog.INFO("Worker ID:" + process.pid);
+  httpServer.listen(PORT, ready);
+}
 
 export { socketServer };
