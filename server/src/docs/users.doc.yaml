@@ -1,0 +1,71 @@
+components:
+  schemas:
+    Register:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: Name of the user
+        last_name:
+          type: string
+          description: Lastname of the user
+        email:
+          type: string
+          description: Email of the user
+        password:
+          type: string
+          description: Password of the user
+      example:
+        first_name: Germán
+        last_name: Orellano
+        email: german@coder.com
+        password: hola1234
+  responses:
+    res201:
+      type: object
+      properties:
+        status:
+          type: string
+          descripton: Successfull code
+        payload:
+          type: object
+          properties:
+            _id:
+              type: string
+            first_name:
+              type: string
+            last_name:
+              type: string
+            email:
+              type: string
+            role:
+              type: number
+          description: Data of the registered user
+      example:
+        status: success
+        payload:
+          _id: 6634319c465242cd36b3a8b1
+          first_name: Federico
+          last_name: Perez
+          email: fede@coder.com
+          role: 0
+paths:
+  /api/auth/register:
+    post:
+      summary: To register to user
+      tags:
+        - Sessions
+      requestBody:
+        required: true
+        description: data of the user
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Register'
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/res201'

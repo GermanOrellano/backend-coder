@@ -9,6 +9,8 @@ import socketUtils from "./src/utils/socket.utils.js";
 import dbUtil from "./src/utils/db.util.js";
 import compression from "express-compression";
 import cluster from "cluster";
+import swaggerJSDoc from "swagger-jsdoc";
+import { serve, setup } from "swagger-ui-express";
 
 import router from "./src/routers/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
@@ -20,6 +22,7 @@ import sessionFileStore from "session-file-store";
 import cors from "cors";
 import winston from "./src/middlewares/winston.mid.js";
 import winstonLog from "./src/utils/logger/index.js";
+import options from "./src/utils/swagger.js";
 
 //server
 const server = express();
@@ -31,6 +34,8 @@ const ready = () => {
 const httpServer = createServer(server);
 const socketServer = new Server(httpServer);
 socketServer.on("connection", socketUtils);
+
+const specs = swaggerJSDoc(options);
 
 //templates
 server.engine("handlebars", engine());
@@ -93,6 +98,7 @@ server.use(
     brotli: { enabled: true, zlib: {} },
   })
 );
+server.use("/api/docs", serve, setup(specs));
 
 //routers
 server.use("/", router);
