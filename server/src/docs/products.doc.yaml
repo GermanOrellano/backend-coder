@@ -1,0 +1,367 @@
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title of product
+        photo:
+          type: string
+          description: Image of the product
+        price:
+          type: integer
+          description: Price of the product
+          format: int64
+        stock:
+          type: integer
+          description: Stock of the product
+          format: int64
+      example:
+        title: Mate
+        photo: https://www.google.com/imgres?q=mate&imgurl=https%3A%2F%2Fd22fxaf9t8d39k.cloudfront.net%2F7c1d6c63291a3f76f3d115a8f7dd05d44d780acc7d207de82f53ba6aa21a3cd419762.jpg&imgrefurl=https%3A%2F%2Fwww.mateandoarg.com%2Fmates%2Fmate-camionero-de-algarrobo-liso-sin-personalizacion&docid=ACoZTusuWTOqeM&tbnid=JibYIVrLUur3JM&vet=12ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA..i&w=600&h=898&hcb=2&ved=2ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA
+        price: 7500
+        stock: 300
+  responses:
+    create:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        payload:
+          type: object
+          description: document detail
+      example:
+        status: success
+        payload:
+          _id: 6634319c465242cd36b3a8b1
+          title: Mate
+          photo: https://www.google.com/imgres?q=mate&imgurl=https%3A%2F%2Fd22fxaf9t8d39k.cloudfront.net%2F7c1d6c63291a3f76f3d115a8f7dd05d44d780acc7d207de82f53ba6aa21a3cd419762.jpg&imgrefurl=https%3A%2F%2Fwww.mateandoarg.com%2Fmates%2Fmate-camionero-de-algarrobo-liso-sin-personalizacion&docid=ACoZTusuWTOqeM&tbnid=JibYIVrLUur3JM&vet=12ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA..i&w=600&h=898&hcb=2&ved=2ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA
+          price: 7500
+          stock: 300
+    read:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        response:
+          type: object
+          description: request document
+      example:
+        status: 200
+        response:
+          - _id: 6634319c465242cd36b3a8b1
+            title: title of the first product
+            photo: https://i.postimg.cc/rmgbCmG5/default-Product-Image.jpg
+            price: 500
+            stock: 500
+            owner_id: b57c3250b6775dd772906b29
+          - _id: 6634319c465242cd36b3a8b1
+            title: title of the second product
+            photo: https://i.postimg.cc/rmgbCmG5/default-Product-Image.jpg
+            price: 5000
+            stock: 5000
+            owner_id: b57c3250b6775dd772906b29
+    update:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Response status
+        response:
+          type: object
+          description: modified product
+      example:
+        status: 200
+        response:
+          _id: 6634319c465242cd36b3a8b1
+          title: Title of the modified product
+          photo: https://www.google.com/imgres?q=mate&imgurl=https%3A%2F%2Fd22fxaf9t8d39k.cloudfront.net%2F7c1d6c63291a3f76f3d115a8f7dd05d44d780acc7d207de82f53ba6aa21a3cd419762.jpg&imgrefurl=https%3A%2F%2Fwww.mateandoarg.com%2Fmates%2Fmate-camionero-de-algarrobo-liso-sin-personalizacion&docid=ACoZTusuWTOqeM&tbnid=JibYIVrLUur3JM&vet=12ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA..i&w=600&h=898&hcb=2&ved=2ahUKEwiCuKHOup-GAxWXrJUCHR7mAPMQM3oFCIEBEAA
+          price: 500
+          stock: 500
+          owner_id: b57c3250b6775dd772906b29
+    readOne:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        response:
+          type: object
+          description: request document
+      example:
+        status: 200
+        response:
+          - _id: 6634319c465242cd36b3a8b1
+            title: Title of the product
+            photo: https://i.postimg.cc/rmgbCmG5/default-Product-Image.jpg
+            price: 500
+            stock: 500
+            owner_id: b57c3250b6775dd772906b29
+    auth:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        path:
+          type: string
+          description: Error endpoint
+        message:
+          type: string
+          description: Error description
+      example:
+        status: 401
+        message: Invalid credentials
+    forbidden:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        path:
+          type: string
+          description: Error endpoint
+        message:
+          type: string
+          description: Error description
+      example:
+        status: 403
+        message: Forbiden
+    notFound:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        path:
+          type: string
+          description: Error endpoint
+        message:
+          type: string
+          description: Error description
+      example:
+        status: 404
+        message: Not found
+    fatal:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: Request status
+        path:
+          type: string
+          description: Error endpoint
+        message:
+          type: string
+          description: Error description
+      example:
+        status: 500
+        message: jwt must be provided
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: token
+paths:
+  /api/products:
+    post:
+      summary: Add new product
+      tags:
+        - Product
+      security:
+        - cookieAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/create'
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/auth'
+        '403':
+          description: No auth
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/forbidden'
+        '500':
+          description: Fatal error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/fatal'
+    get:
+      summary: Read products
+      tags:
+        - Product
+      parameters:
+        - name: page
+          in: query
+          type: integer
+          description: Page number
+        - name: limit
+          in: query
+          type: integer
+          description: Number of document
+        - name: title
+          in: query
+          type: string
+          description: Name of the product
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/read'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/notFound'
+        '500':
+          description: Fatal error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/fatal'
+  /api/products/:pid:
+    get:
+      summary: Read a product
+      tags:
+        - Product
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: ID of the product
+          schema:
+            $type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/readOne'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/notFound'
+        '500':
+          description: Fatal error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/fatal'
+    put:
+      summary: Update
+      tags:
+        - Product
+      security:
+        - cookieAuth: []
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: ID of the product
+          schema:
+            $type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/update'
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/auth'
+        '403':
+          description: No auth
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/forbidden'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/notFound'
+        '500':
+          description: Fatal error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/fatal'
+    delete:
+      summary: Delete product 
+      tags:
+        - Product
+      security:
+        - cookieAuth: []
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: ID of the product
+          schema:
+            $type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/update'
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/auth'
+        '403':
+          description: No auth
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/forbidden'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/notFound'
+        '500':
+          description: Fatal error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/fatal'

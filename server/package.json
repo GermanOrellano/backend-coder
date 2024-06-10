@@ -7,7 +7,9 @@
   "scripts": {
     "start": "nodemon ./server.js",
     "dev": "nodemon ./server.js --env dev",
-    "test": "nodemon ./server.js --env test"
+    "test": "nodemon ./server.js --env test",
+    "image": "docker build -t appcoder .",
+    "container": "docker run -p 9000:9000 appcoder"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +38,8 @@
     "passport-local": "^1.0.0",
     "session-file-store": "^1.5.0",
     "socket.io": "^4.7.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "winston": "^3.13.0"
   },
   "devDependencies": {
