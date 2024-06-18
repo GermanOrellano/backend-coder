@@ -1,4 +1,5 @@
 import args from "../utils/args.util.js";
+import db from "../utils/db.util.js";
 import "dotenv/config.js";
 import winstonLog from "../utils/logger/index.js";
 
@@ -34,6 +35,7 @@ switch (environment) {
     break;
 
   default:
+    db();
     winstonLog.INFO("MONGO CONNECTED");
     const { default: productsMongo } = await import(
       "./mongo/products.mongo.js"

@@ -1,4 +1,4 @@
-import { users } from "../data/mongo/mongo.manager.js";
+/* import { users } from "../data/mongo/mongo.manager.js";
 import isValidPassUtils from "../utils/isValidPass.util.js";
 
 function isValidPass(req, res, next) {
@@ -14,3 +14,4 @@ function isValidPass(req, res, next) {
 }
 
 export default isValidPass;
+ */

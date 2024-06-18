@@ -1,4 +1,7 @@
 import service from "../services/users.service.js";
+import CustomError from "../utils/errors/CustomError.util.js";
+import errors from "../utils/errors/errors.js";
+import { createToken } from "../utils/token.util.js";
 
 class SessionController {
   constructor() {
@@ -6,9 +9,9 @@ class SessionController {
   }
 
   register = async (req, res, next) => {
-    const { email, name } = req.body;
-    const { verifyCode } = req.user;
-    await this.service.register({ email, name, verifyCode });
+    const { email, name, verifiedCode } = req.user;
+    //const { verifyCode } = req.user;
+    await this.service.register({ email, name, verifiedCode });
     try {
       return res.success201("Registered");
     } catch (error) {
@@ -45,14 +48,11 @@ class SessionController {
 
   me = async (req, res, next) => {
     try {
-      const isLogged = req.cookies.token ? true : false;
-      if (isLogged) {
-        const user = {
-          email: req.user.email,
-          role: req.user.role,
-          photo: req.user.photo,
-        };
-        return res.success200(user);
+      if (req.user) {
+        const { email, role, photo, name, lastname, _id: id } = req.user;
+        return res.success200({ email, role, photo, name, lastname, _id: id });
+      } else {
+        return res.error401();
       }
     } catch (error) {
       return next(error);
@@ -69,13 +69,37 @@ class SessionController {
 
   verifyAccount = async (req, res, next) => {
     try {
-      const { verifiedCode, email } = req.body;
+      const { email, verifiedCode } = req.body;
       const user = await service.readByEmail(email);
       if (user.verifiedCode === verifiedCode) {
         await service.update(user._id, { verified: true });
         return res.success200("Verified user");
       } else {
-        return res.error401();
+        return CustomError.new(errors.invalidCred); //revisar error
+      }
+    } catch (error) {
+      return next(error);
+    }
+  };
+
+  badauth = async (req, res, next) => {
+    try {
+      return res.error401();
+    } catch (error) {
+      return next(error);
+    }
+  };
+
+  recovery = async (req, res, next) => {
+    try {
+      const { email } = req.body;
+      const user = await this.service.readByEmail(email);
+      if (user) {
+        const uToken = createToken({ user_id: user._id });
+        await this.service.recovery(user, uToken);
+        return res.success200("Email sent");
+      } else {
+        return CustomError.new(errors.notFound);
       }
     } catch (error) {
       return next(error);
@@ -84,6 +108,23 @@ class SessionController {
 }
 
 const controller = new SessionController();
-const { register, login, signout, verifyAccount, me, google, github } =
-  controller;
-export { register, login, signout, verifyAccount, me, google, github };
+const {
+  register,
+  login,
+  signout,
+  verifyAccount,
+  me,
+  google,
+  github,
+  recovery,
+} = controller;
+export {
+  register,
+  login,
+  signout,
+  verifyAccount,
+  me,
+  google,
+  github,
+  recovery,
+};

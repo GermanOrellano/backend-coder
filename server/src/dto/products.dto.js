@@ -8,7 +8,9 @@ class ProductDTO {
       (this.photo = data.photo),
       (this.price = data.price),
       (this.stock = data.stock),
-      args.env !== "prod" && (this.updateAt = new Date()),
+      (this.owner_id = data.user_id),
+      (this.date = data.date || new Date());
+    args.env !== "prod" && (this.updateAt = new Date()),
       args.env !== "prod" && (this.createAt = new Date());
   }
 }

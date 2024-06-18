@@ -1,4 +1,5 @@
 import { createTransport } from "nodemailer";
+import env from "../utils/env.util.js";
 
 async function sendEmail(data) {
   try {
@@ -11,7 +12,10 @@ async function sendEmail(data) {
       from: `CODER <${env.GOOGLE_EMAIL}>`,
       to: data.email,
       subject: `USER ${data.name.toUpperCase()} REGISTERED`,
-      html: "<h1>USER REGISTERED</h1>",
+      html: `<h1>USER REGISTERED</h1>
+      <body>
+        <p>Verify Code: ${data.verifiedCode}</p>
+      </body>`,
     });
   } catch (error) {
     throw error;

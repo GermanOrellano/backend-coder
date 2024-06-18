@@ -1,9 +1,8 @@
-import CustomError from "./errors/CustomError.util.js";
-import errors from "./errors/errors.js";
-
 function isValidPass(formPassword, dbPassword) {
   if (formPassword !== dbPassword) {
-    CustomError.new(errors.invalidCred);
+    const error = new Error("Invalid credentials");
+    error.statusCode = 401;
+    throw error;
   }
 }
 

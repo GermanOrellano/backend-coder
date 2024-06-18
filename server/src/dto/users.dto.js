@@ -10,7 +10,7 @@ class UserDTO {
     this.age = data.age || 18;
     this.photo = data.photo || "https://i.postimg.cc/wTgNFWhR/profile.png";
     this.email = data.email;
-    this.role = data.role || 0;
+    this.role = data.role || "USER";
     this.password = createHash(data.password);
     this.verified = data.verified || false;
     this.verifiedCode = crypto.randomBytes(12).toString("base64");

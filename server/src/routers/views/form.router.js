@@ -1,13 +1,16 @@
-import { Router } from "express";
+import CustomRouter from "../CustomRouter.js";
 
-const formRouter = Router();
-
-formRouter.get("/form", async (req, res, next) => {
-  try {
-    return res.render("form");
-  } catch (error) {
-    next(error);
+class FormsRouter extends CustomRouter {
+  init() {
+    this.read("/", ["ADMIN"], async (req, res, next) => {
+      try {
+        return res.render("form", { title: "NEW" });
+      } catch (error) {
+        next(error);
+      }
+    });
   }
-});
+}
 
-export default formRouter;
+const formsRouter = new FormsRouter();
+export default formsRouter.getRouter();

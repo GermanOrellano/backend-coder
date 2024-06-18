@@ -1,6 +1,8 @@
 import service from "../services/users.service.js";
 import CustomError from "../utils/errors/CustomError.util.js";
 import errors from "../utils/errors/errors.js";
+import { createHash, verifyHash } from "../utils/hash.util.js";
+import { verifyToken } from "../utils/token.util.js";
 
 class UsersController {
   constructor() {
@@ -11,11 +13,7 @@ class UsersController {
     try {
       const data = req.body;
       const response = await this.service.create(data);
-      if (response === "Name, photo and email are required") {
-        return next(error);
-      } else {
-        return res.success201(response);
-      }
+      return res.success201(response);
     } catch (error) {
       return next(error);
     }
@@ -33,15 +31,15 @@ class UsersController {
       if (req.query.email) {
         filter.email = new RegExp(req.query.email.trim(), "i");
       }
-      if (req.query.sort === "asc") {
-        orderAndPaginate.sort.email = 1;
+      if (req.query.sort === "desc") {
+        orderAndPaginate.sort.email = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      if (all.docs.length > 0) {
-        return res.success200(all);
+      return res.success200(all);
+      /* if (all.docs.length > 0) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -51,11 +49,11 @@ class UsersController {
     try {
       const { uid } = req.params;
       const one = await this.service.readOne(uid);
-      if (one) {
-        return res.success200(one);
+      return res.success200(one);
+      /* if (one) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -65,11 +63,11 @@ class UsersController {
     try {
       const { email } = req.params;
       const one = await this.service.readByEmail(email);
-      if (one) {
-        return res.success200(one);
+      return res.success200(one);
+      /* if (one) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -79,11 +77,25 @@ class UsersController {
     try {
       const { uid } = req.params;
       const data = req.body;
+      const { password } = data;
       const uOne = await this.service.update(uid, data);
-      if (uOne) {
-        return res.success200(uOne);
-      } else {
+      if (!uOne) {
         CustomError.new(errors.notFound);
+      } else {
+        if (password) {
+          const verify = verifyHash(password, uOne.password);
+          if (verify) {
+            CustomError.new(errors.exist);
+          } else {
+            const newPass = createHash(password);
+            const response = await this.service.update(uid, {
+              password: newPass,
+            });
+            return res.success201(response);
+          }
+        } else {
+          return res.success200(uOne);
+        }
       }
     } catch (error) {
       return next(error);
@@ -94,11 +106,39 @@ class UsersController {
     try {
       const { uid } = req.params;
       const dOne = await this.service.destroy(uid);
-      if (dOne) {
-        return res.success200(dOne);
+      return res.success200(dOne);
+      /* if (dOne) {
       } else {
         CustomError.new(errors.notFound);
+      } */
+    } catch (error) {
+      return next(error);
+    }
+  };
+
+  verify = async (req, res, next) => {
+    try {
+      const uToken = verifyToken(req.params);
+      if (uToken) {
+        return res.success200({
+          response: "Verified",
+          user_id: uToken.user_id,
+        });
+      } else {
+        return CustomError(errors.notFound);
       }
+    } catch (error) {
+      return next(error);
+    }
+  };
+
+  updateRole = async (req, res, next) => {
+    try {
+      const { uid } = req.params;
+      const one = await this.service.readByEmail(uid);
+      const newRole = one.role === "PREM" ? "USER" : "PREM";
+      const response = await this.service.update(uid, { role: newRole });
+      return res.success200(response);
     } catch (error) {
       return next(error);
     }
@@ -107,5 +147,23 @@ class UsersController {
 
 export default UsersController;
 const controller = new UsersController();
-const { create, read, readOne, readByEmail, update, destroy } = controller;
-export { create, read, readOne, readByEmail, update, destroy };
+const {
+  create,
+  read,
+  readOne,
+  readByEmail,
+  update,
+  destroy,
+  verify,
+  updateRole,
+} = controller;
+export {
+  create,
+  read,
+  readOne,
+  readByEmail,
+  update,
+  destroy,
+  verify,
+  updateRole,
+};

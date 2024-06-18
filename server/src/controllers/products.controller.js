@@ -11,14 +11,15 @@ class ProductsController {
   create = async (req, res, next) => {
     try {
       const data = req.body;
+      data.user_id = req.user_id;
       const response = await this.service.create(data);
       winstonLog.INFO(data);
-      if (response === "Title, photo, price and stock are required") {
+      return res.success201(response);
+      /* if (response === "Title, photo, price and stock are required") {
         //revisar error
         CustomError.new(errors.error);
       } else {
-        return res.success201(response);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -29,20 +30,25 @@ class ProductsController {
       const orderAndPaginate = {
         limit: req.query.limit || 5,
         page: req.query.page || 1,
+        sort: { title: 1 },
+        lean: true,
       };
       const filter = {};
       if (req.query.title) {
         filter.title = new RegExp(req.query.title.trim(), "i");
       }
-      if (req.query.price === "asc") {
-        orderAndPaginate.sort.price = 1;
+      if (req.query.sort === "desc") {
+        orderAndPaginate.sort.price = "desc";
+      }
+      if (req.user && req.user.role === "PREM") {
+        filter.owner_id = { $ne: req.user._id };
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      if (all.docs.length > 0) {
-        return res.success200(all);
+      return res.success200(all);
+      /* if (all.docs.length > 0) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -51,12 +57,8 @@ class ProductsController {
   readOne = async (req, res, next) => {
     try {
       const { pid } = req.params;
-      const pOne = await this.service.readOne(pid);
-      if (pOne) {
-        return res.success200(pOne);
-      } else {
-        CustomError.new(errors.notFound);
-      }
+      const one = await this.service.readOne(pid);
+      return res.success200(one);
     } catch (error) {
       return next(error);
     }
@@ -65,13 +67,19 @@ class ProductsController {
   update = async (req, res, next) => {
     try {
       const { pid } = req.params;
+      const { _id } = req.user;
+      const uid = _id.toString();
       const data = req.body;
-      const uOne = await this.service.update(pid, data);
-      if (uOne) {
-        return res.success200(uOne);
-      } else {
-        CustomError.new(errors.notFound);
+
+      if (req.user.role === "PREM") {
+        const pOne = await this.service.readOne(pid);
+        const oid = pOne.owner_id.toString();
+        if (oid !== uid) {
+          return CustomError.new(errors.forbidden);
+        }
       }
+      const response = await this.service.update(pid, data);
+      return res.success200(response);
     } catch (error) {
       return next(error);
     }
@@ -80,12 +88,46 @@ class ProductsController {
   destroy = async (req, res, next) => {
     try {
       const { pid } = req.params;
-      const dOne = await this.service.destroy(pid);
-      if (dOne) {
-        return res.success200(dOne);
+      const { _id } = req.user;
+      const uid = _id.toString();
+      if (req.user.role === "PREM") {
+        const dOne = await this.service.readOne(pid);
+        const oid = one.owner_id.toString();
+        if (oid === uid) {
+          const response = await this.service.destroy(pid);
+          return res.success200(response);
+        } else {
+          return CustomError.new(errors.notFound);
+        }
       } else {
-        CustomError.new(errors.notFound);
+        const response = await this.service.destroy(pid);
+        return res.success200(response);
       }
+    } catch (error) {
+      return next(error);
+    }
+  };
+
+  readPremium = async (req, res, next) => {
+    try {
+      const orderAndPaginate = {
+        limit: req.query.limit || 10,
+        page: req.query.page || 1,
+        sort: { title: 1 },
+        lean: true,
+      };
+      const filter = {};
+      if (req.query.title) {
+        filter.title = new RegExp(req.query.title.trim(), "i");
+      }
+      if (req.query.sort === "desc") {
+        orderAndPaginate.sort.title = "desc";
+      }
+      if (req.user && req.user.role === "PREM") {
+        filter.owner_id = { $eq: req.user._id };
+      }
+      const all = await this.service.read({ filter, orderAndPaginate });
+      return res.success200(all);
     } catch (error) {
       return next(error);
     }
@@ -94,5 +136,5 @@ class ProductsController {
 
 export default ProductsController;
 const controller = new ProductsController();
-const { create, read, readOne, update, destroy } = controller;
-export { create, read, readOne, update, destroy };
+const { create, read, readOne, update, destroy, readPremium } = controller;
+export { create, read, readOne, update, destroy, readPremium };

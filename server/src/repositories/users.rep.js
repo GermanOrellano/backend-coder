@@ -7,7 +7,6 @@ class UsersRep {
   constructor() {
     this.model = users;
   }
-
   create = async (data) => {
     data = new UserDTO(data);
     const response = await this.model.create(data);

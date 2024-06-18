@@ -12,8 +12,8 @@ export default (strategy) => {
         if (!user) {
           CustomError.new(
             errors.passCb(
-              info.message || info.toString(),
-              info.statusCode || 401
+              info.message || errors.badAuth.message,
+              info.statusCode || errors.badAuth.statusCode
             )
           );
         }
