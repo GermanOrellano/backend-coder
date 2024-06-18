@@ -1,4 +1,7 @@
 import { Types } from "mongoose";
+import CustomError from "../../utils/errors/CustomError.util.js";
+import errors from "../../utils/errors/errors.js";
+import notFoundOne from "../../utils/notFoundOne.util.js";
 
 class MongoManager {
   constructor(model) {
@@ -8,16 +11,18 @@ class MongoManager {
   async create(data) {
     try {
       const one = await this.model.create(data);
-      return one._id;
+      return one;
     } catch (error) {
       throw error;
     }
   }
 
-  async read(obj) {
+  async read({ filter, orderAndPaginate }) {
     try {
-      let { filter, orderAndPaginate } = obj;
       const all = await this.model.paginate(filter, orderAndPaginate);
+      if (all.totalDocs === 0) {
+        CustomError.new(errors.notFound);
+      }
       return all;
     } catch (error) {
       throw error;
@@ -27,6 +32,7 @@ class MongoManager {
   async readOne(id) {
     try {
       const one = await this.model.findById(id).lean();
+      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -37,6 +43,7 @@ class MongoManager {
     try {
       const opt = { new: true };
       const one = await this.model.findByIdAndUpdate(id, data, opt);
+      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -46,6 +53,7 @@ class MongoManager {
   async destroy(id) {
     try {
       const one = await this.model.findByIdAndDelete(id);
+      notFoundOne(one);
       return one;
     } catch (error) {
       throw error;
@@ -64,28 +72,34 @@ class MongoManager {
   async reportBill(id) {
     try {
       const report = await this.model.aggregate([
-        { $match: { uid: new Types.ObjectId(id) } },
+        { $match: { user_id: new Types.ObjectId(id) } },
         {
           $lookup: {
             from: "products",
             foreignField: "_id",
-            localField: "pid",
-            as: "pid",
+            localField: "product_id",
+            as: "product_id",
           },
         },
         {
           $replaceRoot: {
             newRoot: {
-              $mergeObjects: [{ $arrayElemAt: ["$pid", 0] }, "$$ROOT"],
+              $mergeObjects: [{ $arrayElemAt: ["$product_id", 0] }, "$$ROOT"],
             },
           },
         },
         { $set: { subtotal: { $multiply: ["$price", "$quantity"] } } },
         {
-          $group: { _id: "$uid", total: { $sum: "$subtotal" } },
+          $group: { _id: "$user_id", total: { $sum: "$subtotal" } },
         },
         {
-          $project: { _id: 0, uid: "$_id", total: "$total", date: new Date() },
+          $project: {
+            _id: 0,
+            user_id: "$_id",
+            total: "$total",
+            currency: "USD",
+            date: new Date(),
+          },
         },
       ]);
       return report;

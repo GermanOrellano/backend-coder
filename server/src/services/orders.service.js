@@ -5,50 +5,13 @@ class OrdersService {
     this.repository = repository;
   }
 
-  create = async (data) => {
-    try {
-      const response = await this.repository.create(data);
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  reportBill = async (uid) => {
-    try {
-      const response = await this.repository.reportBill(uid);
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  read = async ({ filter, orderAngPaginate }) => {
-    try {
-      const response = await this.repository.read({ filter, orderAngPaginate });
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  update = async (oid, data) => {
-    try {
-      const response = await this.repository.update(oid, data);
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  destroy = async (oid) => {
-    try {
-      const response = await this.repository.destroy(oid);
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
+  create = async (data) => await this.repository.create(data);
+  reportBill = async (uid) => await this.repository.reportBill(uid);
+  read = async ({ filter, orderAngPaginate }) =>
+    await this.repository.read({ filter, orderAngPaginate });
+  readOne = async (oid) => await this.repository.readOne(oid);
+  update = async (oid, data) => await this.repository.update(oid, data);
+  destroy = async (oid) => await this.repository.destroy(oid);
 }
 
 const service = new OrdersService();

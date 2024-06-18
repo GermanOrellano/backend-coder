@@ -1,22 +1,30 @@
 import service from "../services/orders.service.js";
+import pService from "../services/products.service.js";
 import CustomError from "../utils/errors/CustomError.util.js";
 import errors from "../utils/errors/errors.js";
 
 class OrdersController {
   constructor() {
     this.service = service;
+    this.productService = pService;
   }
 
   create = async (req, res, next) => {
     try {
       const data = req.body;
-      data.user_id = req.user_id;
-      const response = await this.service.create(data);
-      if (response === "User ID, quantity and Product ID are required") {
+      const { user_id, product_id } = data;
+      const pOne = await this.productService.readOne(product_id);
+      if (pOne.owner_id.toString() === user_id) {
+        return CustomError.new(errors.prodUser);
+      } else {
+        const response = await this.service.create(data);
+        return res.success201(response);
+      }
+      /* if (response === "User ID, quantity and Product ID are required") {
         return next(error);
       } else {
         return res.success201(response);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -24,7 +32,8 @@ class OrdersController {
 
   reportBill = async (req, res, next) => {
     try {
-      const { uid } = req.params;
+      const { _id } = req.user;
+      const uid = _id.toString();
       const report = this.service.reportBill(uid);
       return res.success200(report);
     } catch (error) {
@@ -37,20 +46,22 @@ class OrdersController {
       const orderAndPaginate = {
         limit: req.query.limit || 10,
         page: req.query.page || 1,
+        sort: { title: 1 },
+        lean: true,
       };
       const filter = {};
-      if (req.user_id) {
-        filter.user_id = req.user_id;
+      if (req.user._id) {
+        filter.user_id = req.user._id;
       }
       if (req.query.sort === "desc") {
         orderAndPaginate.sort.title = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
-      if (all.docs.length > 0) {
-        return res.success200(all);
+      return res.success200(all);
+      /* if (all.docs.length > 0) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -61,11 +72,11 @@ class OrdersController {
       const { oid } = req.params;
       const data = req.body;
       const oOne = await this.service.update(oid, data);
-      if (oOne) {
-        return res.success200(oOne);
+      return res.success200(oOne);
+      /* if (oOne) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }
@@ -75,11 +86,11 @@ class OrdersController {
     try {
       const { oid } = req.params;
       const dOne = await this.service.destroy(oid);
-      if (dOne) {
-        return res.success200(dOne);
+      return res.success200(dOne);
+      /* if (dOne) {
       } else {
         CustomError.new(errors.notFound);
-      }
+      } */
     } catch (error) {
       return next(error);
     }

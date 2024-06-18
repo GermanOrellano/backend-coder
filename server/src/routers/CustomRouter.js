@@ -1,8 +1,12 @@
 import { Router } from "express";
 import jwt from "jsonwebtoken";
-import users from "../data/mongo/users.mongo.js";
+import CustomError from "../utils/errors/CustomError.util.js";
+/* import users from "../data/mongo/users.mongo.js"; */
 import errors from "../utils/errors/errors.js";
 import env from "../utils/env.util.js";
+import dao from "../data/index.factory.js";
+
+const { users } = dao;
 
 export default class CustomRouter {
   constructor() {
@@ -23,32 +27,27 @@ export default class CustomRouter {
       }
     });
   }
-  responses(req, res, next) {
+  responses = (req, res, next) => {
     res.success200 = (payload) =>
       res.json({ statusCode: 200, response: payload });
     res.success201 = (payload) =>
       res.json({ statusCode: 201, response: payload });
-    res.error400 = (message) => res.json(errors.message(message));
-    res.error401 = () => res.json(errors.badAuth);
-    res.error403 = () => res.json(errors.forbidden);
-    res.error404 = () => res.json(errors.notFound);
+    res.error400 = () => CustomError.new(errors.message(message));
+    res.error401 = () => CustomError.new(errors.badAuth);
+    res.error403 = () => CustomError.new(errors.forbidden);
+    res.error404 = () => CustomError.new(errors.notFound);
     return next();
-  }
+  };
   policies = (arrayOfPolicies) => async (req, res, next) => {
     try {
-      if (arrayOfPolicies.includes("PUBLIC")) return next();
       let token = req.cookies["token"];
-      if (!token) return res.error401();
+      if (!token) return next();
       else {
         const data = jwt.verify(token, env.SECRET); //ya no es process.env
         if (!data) return res.error400("Bad auth by token");
         else {
           const { email, role } = data;
-          if (
-            (role === 0 && arrayOfPolicies.includes("USER")) ||
-            (role === 1 && arrayOfPolicies.includes("ADMIN")) ||
-            (role === 2 && arrayOfPolicies.includes("PREM"))
-          ) {
+          if (arrayOfPolicies.includes(role)) {
             const user = await users.readByEmail(email);
             req.user = user;
             return next();

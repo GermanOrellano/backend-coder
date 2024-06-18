@@ -39,7 +39,7 @@ components:
             email:
               type: string
             role:
-              type: number
+              type: string
           description: Data of the registered user
       example:
         status: success
@@ -48,7 +48,7 @@ components:
           first_name: Federico
           last_name: Perez
           email: fede@coder.com
-          role: 0
+          role: "USER"
 paths:
   /api/auth/register:
     post:
@@ -61,11 +61,11 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Register'
+              $ref: "#/components/schemas/Register"
       responses:
-        '201':
+        "201":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/responses/res201'
+                $ref: "#/components/responses/res201"

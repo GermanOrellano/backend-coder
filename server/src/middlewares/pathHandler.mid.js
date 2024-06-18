@@ -1,7 +1,9 @@
-export default (req, res, next) => {
-  return res.json({
-    statusCode: 404,
-    url: `${req.method} ${req.url}`,
-    message: "not found endpoint",
-  });
+import winstonLog from "../utils/logger/index.js";
+
+const pathHandler = (req, res, next) => {
+  const response = `${req.method} ${req.url} not found endpoint`;
+  winstonLog.WARN(response);
+  return res.json(response);
 };
+
+export default pathHandler;

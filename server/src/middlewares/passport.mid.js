@@ -22,9 +22,8 @@ passport.use(
         if (one) {
           return done(null, false, errors.exist);
         } else {
-          let data = req.body;
-          data.password = createHash(password);
-          let user = await repository.create(data);
+          //data.password = createHash(password);
+          const user = await repository.create(req.body);
           return done(null, user);
         }
       } catch (error) {
@@ -43,7 +42,11 @@ passport.use(
         const user = await repository.readByEmail(email);
         const verify = verifyHash(password, user.password);
         if (user?.verified && verify) {
-          const token = createToken({ email, role: user.role });
+          const token = createToken({
+            email,
+            role: user.role,
+            user_id: user._id,
+          });
           req.token = token;
           return done(null, user);
         } else {
@@ -83,7 +86,7 @@ passport.use(
           user = await repository.create(user);
         }
       } catch (error) {
-        done(error);
+        return done(error);
       }
     }
   )
@@ -135,10 +138,10 @@ passport.use(
       try {
         const user = await repository.readByEmail(payload.email);
         if (user) {
-          user.password = null;
+          user.password = "";
           return done(null, user);
         } else {
-          return done(null, false);
+          return done(null, false, errors.forbidden);
         }
       } catch (error) {
         return done(error);

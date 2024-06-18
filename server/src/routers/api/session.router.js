@@ -4,17 +4,29 @@ import {
   login,
   signout,
   verifyAccount,
+  me,
+  recovery,
 } from "../../controllers/session.controller.js";
 import passCallBack from "../../middlewares/passCallBack.mid.js";
 import passport from "../../middlewares/passport.mid.js";
 
 class SessionRouter extends CustomRouter {
   init() {
-    this.create("/register", ["PUBLIC"], passCallBack("register"), register);
-    this.create("/login", ["PUBLIC"], passCallBack("login"), login);
+    this.create(
+      "/register",
+      ["USER", "ADMIN", "PREM"],
+      passCallBack("register"),
+      register
+    );
+    this.create(
+      "/login",
+      ["USER", "ADMIN", "PREM"],
+      passCallBack("login"),
+      login
+    );
     this.create(
       "/google",
-      ["PUBLIC"],
+      ["USER", "ADMIN", "PREM"],
       passport.authenticate("google", { scope: ["email", "profile"] })
     );
     /* this.read("/google/cb"); */
@@ -26,11 +38,11 @@ class SessionRouter extends CustomRouter {
       passCallBack("jwt"),
       signout
     );
-    this.create("/verify", ["PUBLIC"], verifyAccount);
-    /* this.read("/signout/cb");
-    this.read("/badauth"); */
+    this.create("/verify", ["USER", "ADMIN", "PREM"], verifyAccount);
+    this.create("/me", ["USER", "ADMIN", "PREM"], me);
+    this.create("/recovery", ["USER", "ADMIN", "PREM"], recovery);
   }
 }
 
-const sessionRouter = new SessionRouter();
+let sessionRouter = new SessionRouter();
 export default sessionRouter.getRouter();

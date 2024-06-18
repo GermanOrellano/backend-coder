@@ -1,21 +1,19 @@
 import jwt from "jsonwebtoken";
 import CustomError from "./errors/CustomError.util.js";
 import errors from "./errors/errors.js";
+import env from "./env.util.js";
 
-function createToken(data) {
-  const token = jwt.sign(data, process.env.SECRET, {
-    expiresIn: 60,
-  });
-  return token;
-}
+const createToken = (data) =>
+  jwt.sign(data, env.SECRET, { expiresIn: 60 * 60 * 24 });
 
-function verifyToken(token) {
+const verifyToken = (headers) => {
+  const token = headers.token;
   if (token) {
-    const data = jwt.verify(token, process.env.SECRET);
+    const data = jwt.verify(token, env.SECRET);
     return data;
   } else {
-    CustomError.new(errors.badAuth);
+    throw CustomError.new(errors.badAuth);
   }
-}
+};
 
 export { createToken, verifyToken };

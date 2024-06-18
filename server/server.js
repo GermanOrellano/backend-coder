@@ -1,14 +1,15 @@
 import env from "./src/utils/env.util.js";
 
 import express from "express";
-import { createServer } from "http";
-import { Server } from "socket.io";
+/* import { createServer } from "http";
+import { Server } from "socket.io"; */
 import morgan from "morgan";
 import { engine } from "express-handlebars";
-import socketUtils from "./src/utils/socket.utils.js";
+//import socketUtils from "./src/utils/socket.utils.js";
 import dbUtil from "./src/utils/db.util.js";
 import compression from "express-compression";
 import cluster from "cluster";
+import { cpus } from "os";
 import swaggerJSDoc from "swagger-jsdoc";
 import { serve, setup } from "swagger-ui-express";
 
@@ -31,16 +32,17 @@ const ready = () => {
   winstonLog.INFO(`Express server listening on port: ${PORT}`);
   dbUtil();
 };
-const httpServer = createServer(server);
+const sp = swaggerJSDoc(options);
+/* const httpServer = createServer(server);
 const socketServer = new Server(httpServer);
-socketServer.on("connection", socketUtils);
+socketServer.on("connection", socketUtils); */
 
 const specs = swaggerJSDoc(options);
 
 //templates
 server.engine("handlebars", engine());
 server.set("view engine", "handlebars");
-server.set("views", __dirname + "/src/views");
+server.set("views", `${__dirname} + "/src/views`);
 
 const FileStore = sessionFileStore(expressSession);
 //middlewares
@@ -87,6 +89,7 @@ server.use(
     credentials: true,
   })
 );
+server.use("/api/docs", serve, setup(sp));
 server.use(cookieParser(env.SECRET_KEY));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
@@ -108,10 +111,12 @@ server.use(pathHandler);
 //clusters
 if (cluster.isPrimary) {
   winstonLog.INFO("Primary ID:" + process.pid);
+  const cpu = cpus().length;
+  winstonLog.INFO("CPUS: " + cpu);
   cluster.fork();
 } else {
   winstonLog.INFO("Worker ID:" + process.pid);
-  httpServer.listen(PORT, ready);
+  server.listen(PORT, ready);
 }
 
-export { socketServer };
+//export { socketServer };

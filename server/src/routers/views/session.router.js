@@ -1,23 +1,27 @@
-import { Router } from "express";
+import CustomRouter from "../CustomRouter.js";
 
-const loginRouter = Router();
+class SessionRouter extends CustomRouter {
+  init() {
+    this.read(
+      "/register",
+      ["USER", "PREM", "ADMIN"],
+      async (req, res, next) => {
+        try {
+          return res.render("register", { title: "REGISTER" });
+        } catch (error) {
+          return next(error);
+        }
+      }
+    );
 
-loginRouter.get("/login", (req, res, next) => {
-  try {
-    return res.render("login");
-  } catch (error) {
-    next(error);
+    this.read("/login", ["ADMIN", "PREM", "USER"], async (req, res, next) => {
+      try {
+        return res.render("login", { title: "LOGIN" });
+      } catch (error) {
+        return next(error);
+      }
+    });
   }
-});
-
-const registerRouter = Router();
-
-registerRouter.get("/register", (req, res, next) => {
-  try {
-    return res.render("register");
-  } catch (error) {
-    next(error);
-  }
-});
-
-export { loginRouter, registerRouter };
+}
+const sessionRouter = new SessionRouter();
+export default sessionRouter.getRouter();
