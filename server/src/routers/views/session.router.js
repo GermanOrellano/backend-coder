@@ -21,6 +21,14 @@ class SessionRouter extends CustomRouter {
         return next(error);
       }
     });
+
+    this.read("/verify", ["ADMIN", "PREM", "USER"], async (req, res, next) => {
+      try {
+        return res.render("verify", { title: "VERIFY" });
+      } catch (error) {
+        return next(error);
+      }
+    });
   }
 }
 const sessionRouter = new SessionRouter();

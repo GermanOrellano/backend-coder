@@ -9,9 +9,9 @@ class ProductsService {
   create = async (data) => await this.repository.create(data);
   read = async ({ filter, orderAndPaginate }) =>
     await this.repository.read(filter, orderAndPaginate);
-  readOne = async (pid) => await this.repository.readOne(pid);
-  update = async (pid, data) => await this.repository.update(pid, data);
-  destroy = async (pid) => await this.repository.destroy(pid);
+  readOne = async (id) => await this.repository.readOne(id);
+  update = async (id, data) => await this.repository.update(id, data);
+  destroy = async (id) => await this.repository.destroy(id);
 }
 
 const service = new ProductsService();

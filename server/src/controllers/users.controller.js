@@ -24,7 +24,7 @@ class UsersController {
       const orderAndPaginate = {
         limit: req.query.limit || 10,
         page: req.query.page || 1,
-        sort: { email: 1 },
+        sort: { title: 1 },
         lean: true,
       };
       const filter = {};
@@ -32,7 +32,7 @@ class UsersController {
         filter.email = new RegExp(req.query.email.trim(), "i");
       }
       if (req.query.sort === "desc") {
-        orderAndPaginate.sort.email = "desc";
+        orderAndPaginate.sort.title = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
       return res.success200(all);
@@ -122,7 +122,7 @@ class UsersController {
       if (uToken) {
         return res.success200({
           response: "Verified",
-          user_id: uToken.user_id,
+          uid: uToken.uid,
         });
       } else {
         return CustomError(errors.notFound);

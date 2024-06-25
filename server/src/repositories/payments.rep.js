@@ -19,7 +19,7 @@ class PaymentsRep {
     productsCart = productsCart.map((each) => new CheckoutDTO(each));
     const line_items = productsCart;
     const mode = "payment";
-    const success_url = ""; //agregar link de agradecimiento
+    const success_url = "https://backend-coder.up.railway.app/thanks";
     const intent = await stripe.checkout.sessions.create({
       line_items,
       mode,

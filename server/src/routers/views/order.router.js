@@ -20,12 +20,16 @@ class OrderRouter extends CustomRouter {
           };
           const user = await users.readByEmail(req.user.email);
           const filter = {
-            user_id: user._id,
+            uid: user._id,
           };
           const all = await orders.read({ filter, orderAndPaginate });
-          return res.render("orders", { title: "CART", orders: all.docs });
+          return res.render("order", {
+            title: "CART",
+            orders: all.docs,
+            user: user.name,
+          });
         } catch (error) {
-          return res.render("orders", {
+          return res.render("order", {
             title: "CART",
             message: "No orders",
           });

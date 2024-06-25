@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/styles.css">
+<main class="flex-grow-1 m-auto w-100 d-flex flex-column">
+    <section id="products-mateando"
+        class="flex-grow-1 d-flex flex-column justify-content-evenly align-items-center w-100 mt-2 mb-4">
+        <img src="{{product.photo}}" style="height: 420px; width: auto" class="object-fit-cover img-fluid"
+            alt="{{product.title}}" />
+        <article class="d-flex flex-column justify-content-center align-items-center">
+            <h2 id="productTitle" class="subtitle mt-4 mb-2 text-center">{{product.title}}</h2>
+            <h5 class="p-2 text-center card-title">Price:
+                {{product.price}}</h5>
+            <h5 class="p-2 text-center card-title">Stock:
+                {{product.stock}}</h5>
+            <div class="quantity-controls d-flex align-items-center">
+                <button class="decrease btn btn-outline-dark m-1">-</button>
+                <input type="number" id="quantity" class="quantity-input form-control text-center m-1" value="1" min="1"
+                    max="{{product.stock}}" readonly>
+                <button class="increase btn btn-outline-dark m-1">+</button>
+            </div>
+            <input id={{product._id}} class="buy btn btn-dark fs-5 m-1 me-3" type="button" value=Buy>
+        </article>
+    </section>
+</main>
+<input type="hidden" id="userId" value="{{user}}">
+
+<script src="/scripts/cart.js"></script>

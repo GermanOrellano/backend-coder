@@ -43,7 +43,7 @@ export default class CustomRouter {
       let token = req.cookies["token"];
       if (!token) return next();
       else {
-        const data = jwt.verify(token, env.SECRET); //ya no es process.env
+        const data = jwt.verify(token, env.SECRET);
         if (!data) return res.error400("Bad auth by token");
         else {
           const { email, role } = data;

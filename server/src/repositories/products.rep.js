@@ -15,8 +15,8 @@ class ProductsRep {
   };
   read = async ({ filter, orderAndPaginate }) =>
     await this.model.read({ filter, orderAndPaginate });
-  readOne = async (pid) => await this.model.readOne(pid);
-  update = async (pid, data) => await this.model.update(pid, data);
+  readOne = async (id) => await this.model.readOne(id);
+  update = async (id, data) => await this.model.update(id, data);
   destroy = async (id) => await this.model.destroy(id);
 }
 

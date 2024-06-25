@@ -1,12 +1,10 @@
-//import winstonLog from "../../src/utils/logger/index.js";
-
-const selector = document.querySelector("#login");
+const selector = document.querySelector("#verify");
 
 selector.addEventListener("click", async () => {
   try {
     const data = {
-      email: document.querySelector("#login-email").value,
-      password: document.querySelector("#login-password").value,
+      email: document.querySelector("#verify-email").value,
+      verifiedCode: document.querySelector("#verify-code").value,
     };
 
     const opts = {
@@ -15,18 +13,17 @@ selector.addEventListener("click", async () => {
       body: JSON.stringify(data),
     };
 
-    let response = await fetch("/api/auth/login", opts);
+    let response = await fetch("/api/auth/verify", opts);
     response = await response.json();
 
     if (response.statusCode === 200) {
-      localStorage.setItem("token", response.token);
       Swal.fire({
-        title: "Login!",
+        title: "Verified!",
         text: response.message,
         icon: "success",
       }).then((result) => {
         if (result.isConfirmed) {
-          location.replace("/");
+          location.replace("/auth/login");
         }
       });
     } else {
@@ -36,7 +33,5 @@ selector.addEventListener("click", async () => {
         text: response.message,
       });
     }
-  } catch (error) {
-    winstonLog.WARN(error.message);
-  }
+  } catch (error) {}
 });

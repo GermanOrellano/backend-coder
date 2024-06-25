@@ -95,7 +95,7 @@ class MongoManager {
         {
           $project: {
             _id: 0,
-            user_id: "$_id",
+            uid: "$_id",
             total: "$total",
             currency: "USD",
             date: new Date(),

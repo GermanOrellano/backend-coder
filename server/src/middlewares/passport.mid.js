@@ -45,7 +45,7 @@ passport.use(
           const token = createToken({
             email,
             role: user.role,
-            user_id: user._id,
+            uid: user._id,
           });
           req.token = token;
           return done(null, user);

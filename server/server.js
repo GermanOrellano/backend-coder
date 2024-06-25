@@ -32,17 +32,14 @@ const ready = () => {
   winstonLog.INFO(`Express server listening on port: ${PORT}`);
   dbUtil();
 };
-const sp = swaggerJSDoc(options);
-/* const httpServer = createServer(server);
-const socketServer = new Server(httpServer);
-socketServer.on("connection", socketUtils); */
+
 
 const specs = swaggerJSDoc(options);
 
 //templates
 server.engine("handlebars", engine());
 server.set("view engine", "handlebars");
-server.set("views", `${__dirname} + "/src/views`);
+server.set("views", `${__dirname}/src/views`);
 
 const FileStore = sessionFileStore(expressSession);
 //middlewares
@@ -89,7 +86,8 @@ server.use(
     credentials: true,
   })
 );
-server.use("/api/docs", serve, setup(sp));
+
+server.use("/api/docs", serve, setup(specs));
 server.use(cookieParser(env.SECRET_KEY));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
@@ -101,7 +99,6 @@ server.use(
     brotli: { enabled: true, zlib: {} },
   })
 );
-server.use("/api/docs", serve, setup(specs));
 
 //routers
 server.use("/", router);

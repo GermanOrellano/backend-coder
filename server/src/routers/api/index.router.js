@@ -5,7 +5,6 @@ import usersRouter from "./users.router.js";
 import ordersRouter from "./orders.router.js";
 import winstonLog from "../../utils/logger/index.js";
 import paymentsRouter from "./payments.router.js";
-//import passCallbackMid from "../../middlewares/passCallback.mid.js";
 
 class ApiRouter extends CustomRouter {
   init() {

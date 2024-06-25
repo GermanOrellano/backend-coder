@@ -8,7 +8,7 @@ const schema = new Schema(
     photo: { type: String },
     price: { type: Number, default: 1 },
     stock: { type: Number, default: 10 },
-    owner_id: { type: Types.ObjectId, ref: "users" },
+    oid: { type: Types.ObjectId, ref: "users" },
   },
   { timestamps: true }
 );

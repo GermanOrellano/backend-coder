@@ -1,5 +1,9 @@
+<link rel="stylesheet" href="/styles.css">
 <main class="flex-grow-1 w-100 d-flex flex-column">
-    <h2 class="subtitle mt-4 mb-2 text-center">MY CART</h2>
+    <h2 class="subtitle mt-4 mb-2 text-center">THIS IS YOUT CART, {{user}}</h2>
+    {{#if message}}
+    {{message}}
+    {{else}}
     <section id="products" class="d-flex flex-column justify-content-center align-items-center m-auto mt-2 mb-4 bg-light"
         style="width: 360px;">
         <article class="w-100 d-flex border border-danger">
@@ -24,5 +28,15 @@
         </article>
         {{/each}}
     </section>
+    <input id="" class="btn-buy-finish btn btn-primary mt-4" type="button" value=Make a purchase>
+    <span class="w-100 d-flex justify-content-center">
+        {{#if prev}}
+        <a class="btn btn-dark fs-5 m-4 mt-0" href="/?title={{filter}}&page={{prev}}">Prev</a>
+        {{/if}}
+        {{#if next}}
+        <a class="btn btn-dark fs-5 m-4 mt-0" href="/?title={{filter}}&page={{next}}">Next  </a>
+        {{/if}}
+    </span>
+    {{/if}}
 </main>
 <script src="/scripts/order.js"></script>
