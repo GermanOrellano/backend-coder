@@ -1,5 +1,4 @@
 import CustomRouter from "../CustomRouter.js";
-//import product from "../../data/fs/products.fs.js";
 import dao from "../../data/index.factory.js";
 import productsRouter from "./product.router.js";
 import sessionRouter from "./session.router.js";
@@ -9,12 +8,12 @@ const { products } = dao;
 
 class ViewsRouter extends CustomRouter {
   init() {
-    this.router.use("/product", productsRouter);
+    this.router.use("/products", productsRouter);
     this.router.use("/orders", orderRouter);
     this.router.use("/auth", sessionRouter);
     this.read("/", ["USER", "PREM", "ADMIN"], async (req, res, next) => {
       try {
-        const options = {
+        const orderAndPaginate = {
           limit: req.query.limit || 4,
           page: req.query.page || 1,
           sort: { title: 1 },
@@ -27,16 +26,15 @@ class ViewsRouter extends CustomRouter {
         }
 
         if (req.query.sort === "desc") {
-          options.sort.title = "desc";
+          orderAndPaginate.sort.title = "desc";
         }
 
-        const all = await products.read({ filter, options });
-        //const allObject = all.docs.map((each) => each.toObject());
+        const all = await products.read({ filter, orderAndPaginate });
         return res.render("index", {
           products: all.docs,
           next: all.nextPage,
           prev: all.prevPage,
-          title: "INDEX",
+          title: "Mateando E-Commerce",
           filter: req.query.title,
         });
       } catch (error) {

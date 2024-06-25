@@ -11,7 +11,7 @@ class ProductsController {
   create = async (req, res, next) => {
     try {
       const data = req.body;
-      data.user_id = req.user_id;
+      data.uid = req.uid;
       const response = await this.service.create(data);
       winstonLog.INFO(data);
       return res.success201(response);
@@ -38,17 +38,13 @@ class ProductsController {
         filter.title = new RegExp(req.query.title.trim(), "i");
       }
       if (req.query.sort === "desc") {
-        orderAndPaginate.sort.price = "desc";
+        orderAndPaginate.sort.title = "desc";
       }
       if (req.user && req.user.role === "PREM") {
-        filter.owner_id = { $ne: req.user._id };
+        filter.oid = { $ne: req.user._id };
       }
       const all = await this.service.read({ filter, orderAndPaginate });
       return res.success200(all);
-      /* if (all.docs.length > 0) {
-      } else {
-        CustomError.new(errors.notFound);
-      } */
     } catch (error) {
       return next(error);
     }
@@ -72,8 +68,8 @@ class ProductsController {
       const data = req.body;
 
       if (req.user.role === "PREM") {
-        const pOne = await this.service.readOne(pid);
-        const oid = pOne.owner_id.toString();
+        const one = await this.service.readOne(pid);
+        const oid = one.oid.toString();
         if (oid !== uid) {
           return CustomError.new(errors.forbidden);
         }
@@ -91,8 +87,8 @@ class ProductsController {
       const { _id } = req.user;
       const uid = _id.toString();
       if (req.user.role === "PREM") {
-        const dOne = await this.service.readOne(pid);
-        const oid = one.owner_id.toString();
+        const one = await this.service.readOne(pid);
+        const oid = one.oid.toString();
         if (oid === uid) {
           const response = await this.service.destroy(pid);
           return res.success200(response);
@@ -124,7 +120,7 @@ class ProductsController {
         orderAndPaginate.sort.title = "desc";
       }
       if (req.user && req.user.role === "PREM") {
-        filter.owner_id = { $eq: req.user._id };
+        filter.oid = { $eq: req.user._id };
       }
       const all = await this.service.read({ filter, orderAndPaginate });
       return res.success200(all);

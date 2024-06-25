@@ -72,30 +72,30 @@ class MongoManager {
   async reportBill(id) {
     try {
       const report = await this.model.aggregate([
-        { $match: { user_id: new Types.ObjectId(id) } },
+        { $match: { uid: new Types.ObjectId(id) } },
         {
           $lookup: {
             from: "products",
             foreignField: "_id",
-            localField: "product_id",
-            as: "product_id",
+            localField: "pid",
+            as: "pid",
           },
         },
         {
           $replaceRoot: {
             newRoot: {
-              $mergeObjects: [{ $arrayElemAt: ["$product_id", 0] }, "$$ROOT"],
+              $mergeObjects: [{ $arrayElemAt: ["$pid", 0] }, "$$ROOT"],
             },
           },
         },
         { $set: { subtotal: { $multiply: ["$price", "$quantity"] } } },
         {
-          $group: { _id: "$user_id", total: { $sum: "$subtotal" } },
+          $group: { _id: "$uid", total: { $sum: "$subtotal" } },
         },
         {
           $project: {
             _id: 0,
-            user_id: "$_id",
+            uid: "$_id",
             total: "$total",
             currency: "USD",
             date: new Date(),

@@ -12,19 +12,14 @@ class OrdersController {
   create = async (req, res, next) => {
     try {
       const data = req.body;
-      const { user_id, product_id } = data;
-      const pOne = await this.productService.readOne(product_id);
-      if (pOne.owner_id.toString() === user_id) {
+      const { uid, pid } = data;
+      const one = await this.productService.readOne(pid);
+      if (one.oid === uid) {
         return CustomError.new(errors.prodUser);
       } else {
         const response = await this.service.create(data);
         return res.success201(response);
       }
-      /* if (response === "User ID, quantity and Product ID are required") {
-        return next(error);
-      } else {
-        return res.success201(response);
-      } */
     } catch (error) {
       return next(error);
     }
@@ -51,17 +46,13 @@ class OrdersController {
       };
       const filter = {};
       if (req.user._id) {
-        filter.user_id = req.user._id;
+        filter.uid = req.user._id;
       }
       if (req.query.sort === "desc") {
         orderAndPaginate.sort.title = "desc";
       }
       const all = await this.service.read({ filter, orderAndPaginate });
       return res.success200(all);
-      /* if (all.docs.length > 0) {
-      } else {
-        CustomError.new(errors.notFound);
-      } */
     } catch (error) {
       return next(error);
     }

@@ -1,4 +1,4 @@
-import winstonLog from "../../src/utils/logger/index.js";
+/* import winstonLog from "../../src/utils/logger/index.js"; */
 
 const selector = document.querySelector("#register");
 
@@ -21,13 +21,14 @@ selector.addEventListener("click", async () => {
     let response = await fetch("/api/auth/register", opts);
     response = await response.json();
 
-    if (response.message === "Registered") {
+    if (response.statusCode === 201) {
       Swal.fire({
         title: "Register!",
         text: response.message,
         icon: "success",
+      }).then(() => {
+        location.replace("/auth/verify");
       });
-      location.replace("/auth/login");
     } else {
       Swal.fire({
         title: "Oops...",

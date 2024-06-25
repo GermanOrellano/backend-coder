@@ -1,6 +1,5 @@
 import args from "../utils/args.util.js";
 import db from "../utils/db.util.js";
-import "dotenv/config.js";
 import winstonLog from "../utils/logger/index.js";
 
 const environment = args.env;

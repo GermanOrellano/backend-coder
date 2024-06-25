@@ -4,13 +4,13 @@ import mongoosePaginate from "mongoose-paginate-v2";
 const collection = "orders";
 const schema = new Schema(
   {
-    user_id: {
+    uid: {
       type: Types.ObjectId,
       required: true,
       ref: "users",
       index: true,
     },
-    product_id: {
+    pid: {
       type: Types.ObjectId,
       required: true,
       ref: "products",
@@ -29,16 +29,16 @@ const schema = new Schema(
 schema.plugin(mongoosePaginate);
 
 schema.pre("find", function () {
-  this.populate("user_id", "email photo");
+  this.populate("uid", "email photo");
 });
 schema.pre("find", function () {
-  this.populate("product_id");
+  this.populate("pid");
 });
 schema.pre("findOne", function () {
-  this.populate("user_id", "email photo");
+  this.populate("uid", "email photo");
 });
 schema.pre("findOne", function () {
-  this.populate("product_id");
+  this.populate("pid");
 });
 
 const Order = model(collection, schema);

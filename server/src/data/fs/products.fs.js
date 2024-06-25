@@ -36,15 +36,50 @@ class ProductManager {
     }
   }
 
-  read(obj) {
+  read(filter, option) {
     try {
       if (this.products.length === 0) {
         const error = new Error("There is nothing to read");
         error.statusCode = 404;
         throw error;
-      } else {
-        return this.products;
       }
+
+      let filterP = this.products.filter((product) => {
+        for (let k in filter) {
+          if (product[k] !== filter[k]) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      if (option.sort) {
+        const [k, order] = Object.entries(option.sort)[0];
+        filterP.sort((a, b) => {
+          if (a[k] < b[k]) return order === "asc" ? -1 : 1;
+          if (a[k] > b[k]) return order === "asc" ? 1 : -1;
+          return 0;
+        });
+      }
+
+      const page = option.page || 1;
+      const limit = option.limit || 10;
+      const startIndex = (page - 1) * limit;
+      const endIndex = page * limit;
+      const paginate = filterP.slice(startIndex, endIndex);
+      const res = {
+        docs: paginate,
+        totalDocs: filterP.length,
+        limit: limit,
+        totalPages: Math.ceil(filterP.length / limit),
+        page: page,
+        pagingCounter: startIndex + 1,
+        hasPrevPage: page > 1,
+        hasNextPage: endIndex < filterP.length,
+        prevPage: page > 1 ? page - 1 : null,
+        nextPage: endIndex < filterP.length ? page + 1 : null,
+      };
+      return res;
     } catch (error) {
       throw error;
     }

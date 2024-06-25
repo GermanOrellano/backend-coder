@@ -95,7 +95,7 @@ class SessionController {
       const { email } = req.body;
       const user = await this.service.readByEmail(email);
       if (user) {
-        const uToken = createToken({ user_id: user._id });
+        const uToken = createToken({ uid: user._id });
         await this.service.recovery(user, uToken);
         return res.success200("Email sent");
       } else {

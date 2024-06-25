@@ -9,14 +9,14 @@ class PaymentsController {
     try {
       const filter = {};
       const orderAndPaginate = {
-        limit: req.query.limit || 5,
+        limit: req.query.limit || 4,
         page: req.query.page || 1,
         sort: { title: 1 },
         lean: true,
       };
       const { _id } = req.user;
       if (_id) {
-        filter.user_id = _id;
+        filter.uid = _id;
       }
       const response = await this.service.checkout({
         filter,

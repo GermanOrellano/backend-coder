@@ -83,3 +83,2582 @@
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [33mWARN[39m: GET /products not found endpoint
 [33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /docs not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /api/product not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "index" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server + "/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: Forbidden
+[33mWARN[39m: Forbidden
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "index" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server + "/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "index" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server+ "/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/signout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=mat&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /api/product/?title=&page=1 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/signout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/signout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/signout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Missing credentials
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of null (reading 'password')
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 10:
+...a href="/products/{{._id}}">        <d
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value "styles.css" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ":" (type string) at path "_id" for model "products"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /auth/styles.css not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /class=%22card-img-top%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Invalid path: products.this - 10:25
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 12:
+...        <img src="{{.photo}}" class="car
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /real not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Invalid path: products.this - 10:25
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Invalid path: products.this - 10:25
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Invalid path: products.this - 10:25
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/ not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 28:
+.../index.js"></script>
+-----------------------^
+Expecting 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', got 'EOF'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: No auth token
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user_id' as it is undefined.
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/form not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/form not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property '_id' of 'req.user' as it is undefined.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/086ec06488e1dab15c7fe7bf not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/e861a9a5454ec639d9a18598 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /products/e861a9a5454ec639d9a18598 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /product/form not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Failed to lookup view "detail" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /%22https://www.google.com/aclk?sa=l&ai=DChcSEwihh4Pss92EAxVnIK0GHcZGADAYABALGgJwdg&ase=2&sig=AOD64_158q1cT2j5gcSAzc41bYV-rD_zqA&ctype=5&nis=6&adurl=&ved=2ahUKEwiO6vLrs92EAxWujJUCHbfTAWYQvhd6BQgBEJEB%22 not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[31mERROR[39m: Failed to lookup view "orders" in views directory "C:\Users\ger_o\OneDrive\Escritorio\Germán\Cursos\Curso Coder\Backend\Backend-coder\backend-coder\server/src/views"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Missing credentials
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 31:
+.../order.js"></script>
+-----------------------^
+Expecting 'OPEN_ENDBLOCK', got 'EOF'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 30:
+... </section></main>
+----------------------^
+Expecting 'OPEN_ENDBLOCK', got 'EOF'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Parse error on line 30:
+... </section></main>
+----------------------^
+Expecting 'OPEN_ENDBLOCK', got 'EOF'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 31:
+.../order.js"></script>
+-----------------------^
+Expecting 'OPEN_ENDBLOCK', got 'EOF'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: POST /api/order not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: date is not defined
+[31mERROR[39m: date is not defined
+[31mERROR[39m: date is not defined
+[31mERROR[39m: date is not defined
+[31mERROR[39m: message is not defined
+[31mERROR[39m: date is not defined
+[31mERROR[39m: date is not defined
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Cannot add this product to cart
+[31mERROR[39m: date is not defined
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: date is not defined
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Expected double-quoted property name in JSON at position 85 (line 5 column 1)
+[33mWARN[39m: Expected double-quoted property name in JSON at position 85 (line 5 column 1)
+[33mWARN[39m: Expected double-quoted property name in JSON at position 85 (line 5 column 1)
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Expected double-quoted property name in JSON at position 85 (line 5 column 1)
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: Unexpected number in JSON at position 15 (line 2 column 13)
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /api/orders/65c4fbd62479341c50c49a8b not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: date is not defined
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: Not found docs
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Missing credentials
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: POST /api/auth/github not found endpoint
+[33mWARN[39m: GET /api/auth/github not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[31mERROR[39m: Cannot read properties of undefined (reading 'toString')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cast to ObjectId failed for value ""7b1ca069cbe7658175043398"" (type string) at path "_id" for model "orders"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Missing credentials
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Unexpected token '"', ""e861a9a54"... is not valid JSON
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Unexpected token '"', ""17d3854ca"... is not valid JSON
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: User already exist
+[33mWARN[39m: User already exist
+[33mWARN[39m: User already exist
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: User already exist
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: POST /auth/api/auth/verify not found endpoint
+[33mWARN[39m: POST /auth/api/auth/verify not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: POST /auth/api/auth/verify not found endpoint
+[33mWARN[39m: POST /auth/api/auth/verify not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading '_id')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required., pid: Path `pid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /login not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Forbidden
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/auth/me not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Forbidden
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: Forbidden
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 14:
+...     <h1>{{user._id.toString()}}</h1> 
+-----------------------^
+Expecting 'ID', got 'INVALID'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Path `uid` is required.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Cast to ObjectId failed for value "{}" (type Object) at path "uid" because of "BSONError"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Parse error on line 4:
+..."user">User: {{user.typeOf()}}</h6>   
+-----------------------^
+Expecting 'ID', got 'INVALID'
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Cannot add this product to cart
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Expected double-quoted property name in JSON at position 83 (line 4 column 1)
+[33mWARN[39m: Expected double-quoted property name in JSON at position 83 (line 4 column 1)
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot destructure property 'uid' of 'data' as it is undefined.
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Cast to ObjectId failed for value "{}" (type Object) at path "uid" because of "BSONError"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: Not found docs
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: uid: Cast to ObjectId failed for value "{}" (type Object) at path "uid" because of "BSONError"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: orders validation failed: quantity: Cast to Number failed for value "{}" (type Object) at path "quantity"
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: No auth token
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'email')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'email')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'email')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /checkout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /api/checkout not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /payments not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: GET /checkout/payments not found endpoint
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[31mERROR[39m: Cannot read properties of undefined (reading 'email')
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
+[33mWARN[39m: Bad auth
+[33mWARN[39m: GET /favicon.ico not found endpoint
