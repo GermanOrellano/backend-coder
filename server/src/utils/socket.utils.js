@@ -1,5 +1,4 @@
 import { socketServer } from "../../server.js";
-//import product from "../data/fs/products.fs.js";
 import products from "../data/mongo/products.mongo.js";
 import user from "../data/fs/users.fs.js";
 import order from "../data/fs/orders.fs.js";

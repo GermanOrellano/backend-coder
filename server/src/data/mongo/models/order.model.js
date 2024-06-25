@@ -4,12 +4,14 @@ import mongoosePaginate from "mongoose-paginate-v2";
 const collection = "orders";
 const schema = new Schema(
   {
+
     uid: {
       type: Types.ObjectId,
       required: true,
       ref: "users",
       index: true,
     },
+
     pid: {
       type: Types.ObjectId,
       required: true,

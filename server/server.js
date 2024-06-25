@@ -33,9 +33,6 @@ const ready = () => {
   dbUtil();
 };
 
-/* const httpServer = createServer(server);
-const socketServer = new Server(httpServer);
-socketServer.on("connection", socketUtils); */
 
 const specs = swaggerJSDoc(options);
 
@@ -89,6 +86,7 @@ server.use(
     credentials: true,
   })
 );
+
 server.use("/api/docs", serve, setup(specs));
 server.use(cookieParser(env.SECRET_KEY));
 server.use(express.json());

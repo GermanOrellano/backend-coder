@@ -15,6 +15,7 @@ class OrdersController {
       const { uid, pid } = data;
       const one = await this.productService.readOne(pid);
       if (one.oid === uid) {
+
         return CustomError.new(errors.prodUser);
       } else {
         const response = await this.service.create(data);
@@ -46,6 +47,7 @@ class OrdersController {
       };
       const filter = {};
       if (req.user._id) {
+
         filter.uid = req.user._id;
       }
       if (req.query.sort === "desc") {

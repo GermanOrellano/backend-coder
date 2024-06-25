@@ -1,3 +1,4 @@
+
 [33mWARN[39m: LOG WARN
 [31mERROR[39m: LOG ERROR
 [31mERROR[39m: undefined
@@ -587,7 +588,8 @@
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [31mERROR[39m: Parse error on line 10:
-...a href="/products/{{._id}}">        <d
+...a href="/products/{{._id}}">
+        <d
 -----------------------^
 Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP'
 [33mWARN[39m: GET /favicon.ico not found endpoint
@@ -1367,7 +1369,8 @@ Expecting 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', got 'EOF'
 Expecting 'OPEN_ENDBLOCK', got 'EOF'
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [31mERROR[39m: Parse error on line 30:
-... </section></main>
+... </section>
+</main>
 ----------------------^
 Expecting 'OPEN_ENDBLOCK', got 'EOF'
 [33mWARN[39m: GET /favicon.ico not found endpoint
@@ -1375,7 +1378,8 @@ Expecting 'OPEN_ENDBLOCK', got 'EOF'
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [31mERROR[39m: Cannot read properties of undefined (reading 'toString')
 [31mERROR[39m: Parse error on line 30:
-... </section></main>
+... </section>
+</main>
 ----------------------^
 Expecting 'OPEN_ENDBLOCK', got 'EOF'
 [33mWARN[39m: GET /favicon.ico not found endpoint
@@ -2283,7 +2287,8 @@ Expecting 'OPEN_ENDBLOCK', got 'EOF'
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [31mERROR[39m: Parse error on line 14:
-...     <h1>{{user._id.toString()}}</h1> 
+...     <h1>{{user._id.toString()}}</h1>
+ 
 -----------------------^
 Expecting 'ID', got 'INVALID'
 [33mWARN[39m: GET /favicon.ico not found endpoint
@@ -2359,7 +2364,8 @@ Expecting 'ID', got 'INVALID'
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [33mWARN[39m: GET /favicon.ico not found endpoint
 [31mERROR[39m: Parse error on line 4:
-..."user">User: {{user.typeOf()}}</h6>   
+..."user">User: {{user.typeOf()}}</h6>
+   
 -----------------------^
 Expecting 'ID', got 'INVALID'
 [33mWARN[39m: GET /favicon.ico not found endpoint

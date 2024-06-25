@@ -16,6 +16,7 @@ class PaymentsController {
       };
       const { _id } = req.user;
       if (_id) {
+
         filter.uid = _id;
       }
       const response = await this.service.checkout({
